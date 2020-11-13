@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>HassanBlog</title>
   
   
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://hassanblog.github.io/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://hassanblog.github.io/"/>
   <updated>2020-11-13T08:37:28.707Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://hassanblog.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Hassan Wong</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2019/10/21/My%20First%20Blog/"/>
-    <id>http://yoursite.com/2019/10/21/My%20First%20Blog/</id>
+    <link href="http://hassanblog.github.io/2019/10/21/My%20First%20Blog/"/>
+    <id>http://hassanblog.github.io/2019/10/21/My%20First%20Blog/</id>
     <published>2019-10-21T14:59:49.384Z</published>
     <updated>2020-11-13T08:37:28.707Z</updated>
     
