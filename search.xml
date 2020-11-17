@@ -31,6 +31,28 @@
     
     
     <entry>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>messageboard</title>
+      <link href="messageboard/index.html"/>
+      <url>messageboard/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="有啥子话想和Hassan说的吗？"><a href="#有啥子话想和Hassan说的吗？" class="headerlink" title="有啥子话想和Hassan说的吗？"></a>有啥子话想和Hassan说的吗？</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>友链</title>
       <link href="link/index.html"/>
       <url>link/index.html</url>
