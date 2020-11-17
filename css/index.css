@@ -3679,9 +3679,6 @@ _:future,
   font-size: 0.78em;
   cursor: pointer;
 }
-#page-header a {
-  color: #4eeaab;
-}
 .loading-bg,
 #loading-box .loading-left-bg,
 #loading-box .loading-right-bg {

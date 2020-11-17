@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hassanblog.github.io/link/index.html</loc>
+    
+    <lastmod>2020-11-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hassanblog.github.io/tags/index.html</loc>
     
     <lastmod>2020-11-17</lastmod>
@@ -17,13 +24,6 @@
   
   <url>
     <loc>http://hassanblog.github.io/about/index.html</loc>
-    
-    <lastmod>2020-11-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hassanblog.github.io/link/index.html</loc>
     
     <lastmod>2020-11-17</lastmod>
     
