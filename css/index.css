@@ -1293,7 +1293,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #fac8fa;
+  --btn-hover-color: #ffc966;
   --btn-color: #fff;
   --btn-bg: #9fe4d1;
   --text-bg-hover: #9fe4d1;
@@ -1528,11 +1528,11 @@ img:not([src]) {
   height: auto !important;
 }
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 13px;
+  height: 16px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: var(--btn-bg);
+  background-color: var(#c8c8c8);
   background-image: -webkit--webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
   background-image: -webkit--moz-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
   background-image: -webkit--o-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
@@ -1541,7 +1541,7 @@ img:not([src]) {
   border-radius: 2em;
 }
 *::-webkit-scrollbar-track {
-  background-color: rgba(73,177,245,0.2);
+  background-color: #c8c8c8;
   border-radius: 2em;
 }
 *::-webkit-scrollbar-corner {
@@ -1549,7 +1549,7 @@ img:not([src]) {
 }
 *::-moz-selection {
   color: #fff;
-  background-color: var(--btn-bg);
+  background-color: #c8c8c8;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #121212;
@@ -1873,7 +1873,7 @@ blockquote footer cite:before {
   font-size: 1.72em;
 }
 .article-sort-title:hover:before {
-  border-color: #fac8fa;
+  border-color: #ffc966;
 }
 .article-sort-title:before {
   position: absolute;
@@ -1925,7 +1925,7 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 .article-sort-item:hover:before {
-  border-color: #fac8fa;
+  border-color: #ffc966;
 }
 .article-sort-item:before {
   position: absolute;
@@ -1955,7 +1955,7 @@ blockquote footer cite:before {
   border-color: #9fe4d1;
 }
 .article-sort-item.year:before {
-  border-color: #fac8fa;
+  border-color: #ffc966;
 }
 .article-sort-item-time {
   color: #858585;
@@ -2079,7 +2079,7 @@ blockquote footer cite:before {
   content: '';
 }
 #page .category-lists ul li:hover:before {
-  border-color: #fac8fa;
+  border-color: #ffc966;
 }
 .layout {
   display: -webkit-box;
@@ -6001,7 +6001,7 @@ blockquote.pullquote.right {
   line-height: 1.7;
 }
 #local-search .search-dialog .local-search__hit-item:hover:before {
-  border-color: #fac8fa;
+  border-color: #ffc966;
 }
 #local-search .search-dialog .local-search__hit-item:before {
   position: absolute;

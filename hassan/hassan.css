@@ -1,0 +1,24 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 修改图标大小 */
+.icon-bilibili:before {
+  content: "\e647";
+  /* 修改颜色 */
+  color: #00a5dc;
+  /* 修改大小 */
+  font-size: 26px;
+}
+
+.icon-sina:before {
+  content: "\e600";
+  /* 修改颜色 */
+  color: #e32428;
+  /* 修改大小 */
+  font-size: 26px;
+}
+
+.icon-quanminkge:before {
+  content: "\e970";
+  /* 修改颜色 */
+  color: #f05549;
+  /* 修改大小 */
+  font-size: 26px;
+}
