@@ -1,15 +1,24 @@
 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 修改图标大小 */
-
-.icon-sina:before {
-  font-size: large;
+.fa-github:before {
+  content: "\f09b";
 }
 
-.icon-sina:before {
-  content: "\e600";
+.fa-github:before {
+  content: "\f09b";
+  /* 修改颜色 */
+  color: #4eabe9;
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+  /* 修改颜色 */
+  color: #ecc849;
+}
+
+.fa-weibo:before {
+  content: "\f18a";
   /* 修改颜色 */
   color: #e32428;
-  /* 修改大小 */
-  font-size: 19px;
 }
 
 .icon-bilibili:before {

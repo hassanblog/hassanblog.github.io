@@ -6,7 +6,7 @@
   <link href="http://hassanblog.github.io/atom.xml" rel="self"/>
   
   <link href="http://hassanblog.github.io/"/>
-  <updated>2020-11-13T08:37:28.707Z</updated>
+  <updated>2020-11-23T03:41:30.489Z</updated>
   <id>http://hassanblog.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://hassanblog.github.io/2019/10/21/My%20First%20Blog/"/>
-    <id>http://hassanblog.github.io/2019/10/21/My%20First%20Blog/</id>
-    <published>2019-10-21T14:59:49.384Z</published>
-    <updated>2020-11-13T08:37:28.707Z</updated>
+    <title>我的第一篇博客</title>
+    <link href="http://hassanblog.github.io/2020/11/22/My%20First%20Blog/"/>
+    <id>http://hassanblog.github.io/2020/11/22/My%20First%20Blog/</id>
+    <published>2020-11-22T13:24:00.000Z</published>
+    <updated>2020-11-23T03:41:30.489Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="My-First-Blog"><a href="#My-First-Blog" class="headerlink" title="My First Blog"></a>My First Blog</h3><p>这是修改后的内容</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="心中之🔥再次燃起"><a href="#心中之🔥再次燃起" class="headerlink" title="心中之🔥再次燃起"></a>心中之🔥再次燃起</h3><p>今天是2020-11-22，今天我决定写我人生中真正意义上的第一篇博客。说到博客，之前一直对我来说是件很头疼的事情。记得第一次正儿八经地听说博客，是19年10月份在一个学院小讲堂上，夏学长教我们如何搭建博客、更改主题等等等等，最后确实搭建成功了，但发现非常的麻烦，毕竟自己也是小白，没太多时间鼓捣，于是放弃了。然后今年的2月份，我突然改变主意就直接用CSDN写博客，说实话使用起来确实方便，毕竟别人什么都给你做了，你只需要在上面写博客即可，当然除了我那几天上传的2个博客，之后就再也没有上传过了，人比较懒。直到近几天，我又心血来潮，就又开始花时间鼓捣，居然很快就上手了，可能学的知识多了，有些之前遇到的难题就迎刃而解了。开始我把yilia主题更改为butterfly，记得我在官网找主题就找了很久，一百来个主题反反复复看都没有喜欢的，最后还是百度了一下才找到这个”风靡全网“的主题，说实话我很喜欢，很符合自己的审美，10分我给9分。我现在自己每天花一点时间美化博客。</p><h3 id="我会在博客里写哪些内容？"><a href="#我会在博客里写哪些内容？" class="headerlink" title="我会在博客里写哪些内容？"></a>我会在博客里写哪些内容？</h3><p>说实话，我想写任何我想写的方面。但主要还是关于计算机相关的内容，记录一下自己学习过程，也会记录一些我觉得有用的东西，目标受众更多的是我自己，如果能帮到大伙，那真的是无心插柳柳成荫，整挺好！</p>]]></content>
     
     
       
@@ -33,6 +33,10 @@
     
     
     
+    <category term="随想" scheme="http://hassanblog.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="博客" scheme="http://hassanblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
