@@ -8,7 +8,7 @@
       <link href="2020/11/22/My%20First%20Blog/"/>
       <url>2020/11/22/My%20First%20Blog/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="心中之🔥再次燃起"><a href="#心中之🔥再次燃起" class="headerlink" title="心中之🔥再次燃起"></a>心中之🔥再次燃起</h3><p>今天是2020-11-22，今天我决定写我人生中真正意义上的第一篇博客。说到博客，之前一直对我来说是件很头疼的事情。记得第一次正儿八经地听说博客，是19年10月份在一个学院小讲堂上，夏学长教我们如何搭建博客、更改主题等等等等，最后确实搭建成功了，但发现非常的麻烦，毕竟自己也是小白，没太多时间鼓捣，于是放弃了。然后今年的2月份，我突然改变主意就直接用CSDN写博客，说实话使用起来确实方便，毕竟别人什么都给你做了，你只需要在上面写博客即可，当然除了我那几天上传的2个博客，之后就再也没有上传过了，人比较懒。直到近几天，我又心血来潮，就又开始花时间鼓捣，居然很快就上手了，可能学的知识多了，有些之前遇到的难题就迎刃而解了。开始我把yilia主题更改为butterfly，记得我在官网找主题就找了很久，一百来个主题反反复复看都没有喜欢的，最后还是百度了一下才找到这个”风靡全网“的主题，说实话我很喜欢，很符合自己的审美，10分我给9分。现在有空的话，我会一点美化和完善我的博客。</p><h3 id="我会在博客里写哪些内容？"><a href="#我会在博客里写哪些内容？" class="headerlink" title="我会在博客里写哪些内容？"></a>我会在博客里写哪些内容？</h3><p>说实话，我想写任何我想写的方面。但主要还是关于计算机相关的内容，记录一下自己学习过程，也会记录一些我觉得有用的东西，目标受众更多的是我自己，如果能帮到大伙，那真的是无心插柳柳成荫，整挺好！</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="心中之🔥再次燃起"><a href="#心中之🔥再次燃起" class="headerlink" title="心中之🔥再次燃起"></a>心中之🔥再次燃起</h3><p>今天是2020-11-22，我决定写我人生中真正意义上的第一篇博客。说到博客，之前一直对我来说是件很头疼的事情。记得第一次正儿八经地听说博客，是19年10月份在一个学院小讲堂上，夏学长教我们如何搭建博客、更改主题等等等等，最后确实搭建成功了，但发现非常的麻烦，毕竟自己也是小白，没太多时间鼓捣，于是放弃了。然后今年的2月份，我突然改变主意就直接用CSDN写博客，说实话使用起来确实方便，毕竟别人什么都给你做了，你只需要在上面写博客即可，当然除了我那几天上传的2个博客，之后就再也没有上传过了，人比较懒。直到近几天，我又心血来潮，就又开始花时间鼓捣，居然很快就上手了，可能学的知识多了，有些之前遇到的难题就迎刃而解了。开始我把yilia主题更改为butterfly，记得我在官网找主题就找了很久，一百来个主题反反复复看都没有喜欢的，最后还是百度了一下才找到这个”风靡全网“的主题，说实话我很喜欢，很符合自己的审美，10分我给9分。现在有空的话，我会一点美化和完善我的博客。</p><h3 id="我会在博客里写哪些内容？"><a href="#我会在博客里写哪些内容？" class="headerlink" title="我会在博客里写哪些内容？"></a>我会在博客里写哪些内容？</h3><p>说实话，我想写任何我想写的方面。但主要还是关于计算机相关的内容，记录一下自己学习过程，也会记录一些我觉得有用的东西，目标受众更多的是我自己，如果能帮到大伙，那真的是无心插柳柳成荫，整挺好！</p>]]></content>
       
       
       <categories>
@@ -29,28 +29,6 @@
     
   
   
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="hassan/hassan.css"/>
-      <url>hassan/hassan.css</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 修改图标大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}]]></content>
-      
-    </entry>
-    
     
     
     <entry>
@@ -76,6 +54,39 @@
     
     
     <entry>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="hassan/hassan.css"/>
+      <url>hassan/hassan.css</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/* 修改图标大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="hassan/hassan.js"/>
       <url>hassan/hassan.js</url>
@@ -92,17 +103,6 @@
       <url>messageboard/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="有啥子话想和Hassan说的吗？"><a href="#有啥子话想和Hassan说的吗？" class="headerlink" title="有啥子话想和Hassan说的吗？"></a>有啥子话想和Hassan说的吗？</h1>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
     </entry>
     
