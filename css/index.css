@@ -1290,8 +1290,8 @@ canvas:not(#ribbon-canvas),
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
-  --preloader-bg: #37474f;
-  --preloader-color: #fff;
+  --preloader-bg: #f1f9f3;
+  --preloader-color: #000;
   --tab-border-color: #f0f0f0;
   --tab-botton-bg: #f0f0f0;
   --tab-botton-color: #1f2d3d;
@@ -4686,7 +4686,7 @@ _:future,
 #rightside {
   position: fixed;
   right: -38px;
-  bottom: 50px;
+  bottom: 100px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
