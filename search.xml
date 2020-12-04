@@ -32,17 +32,6 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="manifest.json"/>
       <url>manifest.json</url>
@@ -54,11 +43,11 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
       
     </entry>
     
@@ -87,6 +76,17 @@
     
     
     <entry>
+      <title>友链</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="hassan/hassan.js"/>
       <url>hassan/hassan.js</url>
@@ -109,9 +109,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title>我的歌单</title>
+      <link href="music/index.html"/>
+      <url>music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -120,9 +120,9 @@
     
     
     <entry>
-      <title>我的歌单</title>
-      <link href="music/index.html"/>
-      <url>music/index.html</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
