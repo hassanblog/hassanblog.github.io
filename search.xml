@@ -33,17 +33,6 @@
     
     <entry>
       <title></title>
-      <link href="hassan/hassan.js"/>
-      <url>hassan/hassan.js</url>
-      
-        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2020 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="manifest.json"/>
       <url>manifest.json</url>
       
@@ -65,33 +54,33 @@
     
     
     <entry>
-      <title></title>
-      <link href="hassan/hassan.css"/>
-      <url>hassan/hassan.css</url>
-      
-        <content type="html"><![CDATA[/* 修改图标大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="categories/index.html"/>
       <url>categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="hassan/hassan.js"/>
+      <url>hassan/hassan.js</url>
+      
+        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2020 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="hassan/hassan.css"/>
+      <url>hassan/hassan.css</url>
+      
+        <content type="html"><![CDATA[/* 修改图标大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}]]></content>
       
     </entry>
     
@@ -114,6 +103,17 @@
       <url>messageboard/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="有啥子话想和Hassan说的吗？"><a href="#有啥子话想和Hassan说的吗？" class="headerlink" title="有啥子话想和Hassan说的吗？"></a>有啥子话想和Hassan说的吗？</h1>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
