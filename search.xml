@@ -33,6 +33,17 @@
     
     <entry>
       <title></title>
+      <link href="hassan/hassan.js"/>
+      <url>hassan/hassan.js</url>
+      
+        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2020 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="manifest.json"/>
       <url>manifest.json</url>
       
@@ -54,17 +65,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="hassan/hassan.css"/>
       <url>hassan/hassan.css</url>
@@ -76,9 +76,9 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -87,11 +87,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="hassan/hassan.js"/>
-      <url>hassan/hassan.js</url>
+      <title>分类</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
       
-        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2020 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友链</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -112,17 +123,6 @@
       <title>我的歌单</title>
       <link href="music/index.html"/>
       <url>music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
