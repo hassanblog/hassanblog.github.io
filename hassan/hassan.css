@@ -1,4 +1,4 @@
-/* 修改图标大小 */
+/* 修改图标颜色、大小 */
 .fa-github:before {
   content: "\f09b";
 }
@@ -35,4 +35,55 @@
   color: #f05549;
   /* 修改大小 */
   font-size: 19px;
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+@media screen and (max-width: 800px) {
+  #aside_content div:not(:last-child) {
+    display: none;
+    font-size: 13px;
+  }
+}
+
+/* 鼠标图标 */
+
+body {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png), auto;
+}
+
+/*a标签*/
+
+a:hover {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+}
+
+/*按钮*/
+
+button:hover {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+}
+
+/*i标签*/
+
+i:hover {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+}
+
+/*页脚a标签*/
+
+#footer-wrap a:hover {
+  text-decoration: none;
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+}
+
+/*分页器*/
+
+#pagination .page-number:hover {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+}
+
+/*头部的导航栏*/
+
+#nav .site-page:hover {
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
 }

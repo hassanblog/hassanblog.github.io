@@ -65,6 +65,17 @@
     
     
     <entry>
+      <title>友链</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="hassan/hassan.js"/>
       <url>hassan/hassan.js</url>
@@ -80,18 +91,7 @@
       <link href="hassan/hassan.css"/>
       <url>hassan/hassan.css</url>
       
-        <content type="html"><![CDATA[/* 修改图标大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 修改图标颜色、大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/@media screen and (max-width: 800px) {  #aside_content div:not(:last-child) {    display: none;    font-size: 13px;  }}/* 鼠标图标 */body {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png), auto;}/*a标签*/a:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}/*按钮*/button:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}/*i标签*/i:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}/*页脚a标签*/#footer-wrap a:hover {  text-decoration: none;  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}/*分页器*/#pagination .page-number:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}/*头部的导航栏*/#nav .site-page:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;}]]></content>
       
     </entry>
     
@@ -109,9 +109,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title>我的歌单</title>
+      <link href="music/index.html"/>
+      <url>music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -120,9 +120,9 @@
     
     
     <entry>
-      <title>我的歌单</title>
-      <link href="music/index.html"/>
-      <url>music/index.html</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
