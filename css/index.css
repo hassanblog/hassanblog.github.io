@@ -4,15 +4,14 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* 鼠标自定义图标 */
+/* 鼠标样式 */
 body {
-  background: rgba(255, 255, 255, 0.5);
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png), auto;
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png), default !important;
   margin: 0;
 }
 a:hover {
   text-decoration: none;
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), auto;
+  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor1.png), pointer !important;
 }
 
 main {
