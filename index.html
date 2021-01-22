@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hassan's Blog - 时不我待，只争朝夕</title><meta name="keywords" content="计算机知识"><meta name="author" content="Hassan Wong"><meta name="copyright" content="Hassan Wong"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="分享各式各样的知识~">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hassan's Blog - 时不我待，只争朝夕</title><meta name="keywords" content="计算机知识"><meta name="author" content="Hassan Wong"><meta name="copyright" content="Hassan Wong"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="分享各式各样的知识~">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hassan&#39;s Blog">
 <meta property="og:url" content="http://hassanblog.github.io/index.html">
@@ -9,7 +9,7 @@
 <meta property="article:author" content="Hassan Wong">
 <meta property="article:tag" content="计算机知识">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg"><link rel="shortcut icon" href="/hassan/favicon.png"><link rel="canonical" href="http://hassanblog.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/img/pwa/manifest.json"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg"><link rel="shortcut icon" href="/hassan/favicon.png"><link rel="canonical" href="http://hassanblog.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -34,20 +34,28 @@
     month: '个月前'
   },
   copyright: {"limitCount":100,"languages":{"author":"作者: Hassan Wong","link":"链接: ","source":"来源: Hassan's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  ClickShowText: undefined,
   lightbox: 'fancybox',
   Snackbar: {"chs_to_cht":"您已切换为繁体~","cht_to_chs":"您已切换为简体~","day_to_night":"您已切换为深色模式~","night_to_day":"您已切换为浅色模式~","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
   },
   isPhotoFigcaption: true,
   islazyload: true,
   isanchor: false
 };
 
-var saveToLocal = {
+const saveToLocal = {
+  // ttl 單位是 天
   set: function setWithExpiry(key, value, ttl) {
+    if (ttl === 0) return
     const now = new Date()
     const expiryDay = ttl * 86400000
     const item = {
@@ -72,12 +80,27 @@ var saveToLocal = {
     }
     return item.value
   }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2020-12-11 17:01:44'
+  postUpdate: '2021-01-22 20:46:28'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,13 +165,16 @@ if (asideStatus !== undefined) {
    } else {
      document.documentElement.classList.remove('hide-aside')
    }
-}})()</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2204525_rdlmtzh5iyb.css"><link rel="stylesheet" href="hassan/hassan.css"><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Hassan's Blog" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-time-axis"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-sort"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw iconfont icon-movie"></i><span> 电影</span></a></li><li><a class="site-page" href="/gallery/"><i class="fa-fw iconfont icon-photo"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-blogroll"></i><span> 网链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw iconfont icon-messageboard"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于我</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://gitee.com/HassanWong/image-bed/raw/master/images/%E8%B5%AB%E6%95%8F.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hassan's Blog</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 站内搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-time-axis"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-sort"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw iconfont icon-movie"></i><span> 电影</span></a></li><li><a class="site-page" href="/gallery/"><i class="fa-fw iconfont icon-photo"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-blogroll"></i><span> 网链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw iconfont icon-messageboard"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于我</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">Hassan's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/hassanblog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hassanspencer@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/u/6574421101" target="_blank" title="Sina"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://space.bilibili.com/383883097" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili"></i></a><a class="social-icon" href="https://kg.qq.com/node/personal?uid=639b9c81222c368234" target="_blank" title="全民K歌"><i class="iconfont icon-quanminkge"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">     <img class="post_bg" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/my_first_blog.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">我的第一篇博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-22T13:24:00.000Z" title="发表于 2020-11-22 21:24:00">2020-11-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">心中之🔥再次燃起今天是2020-11-22，我决定写我人生中真正意义上的第一篇博客。说到博客，之前一直对我来说是件很头疼的事情。记得第一次正儿八经地听说博客，是19年10月份在一个学院小讲堂上，夏学长教我们如何搭建博客、更改主题等等等等，最后确实搭建成功了，但发现非常的麻烦，毕竟自己也是小白，没太多时间鼓捣，于是放弃了。然后今年的2月份，我突然改变主意就直接用CSDN写博客，说实话使用起来确实方便，毕竟别人什么都给你做了，你只需要在上面写博客即可，当然除了我那几天上传的2个博客，之后就再也没有上传过了，人比较懒。直到近几天，我又心血来潮，就又开始花时间鼓捣，居然很快就上手了，可能学的知识多了，有些之前遇到的难题就迎刃而解了。开始我把yilia主题更改为butterfly，记得我在官网找主题就找了很久，一百来个主题反反复复看都没有喜欢的，最后还是百度了一下才找到这个”风靡全网“的主题，说实话我很喜欢，很符合自己的审美，10分我给9分。现在有空的话，我会一点美化和完善我的博客。
-我会在博客里写哪些内容？说实话，我想写任何我想写的方面。但主要还是关于计算机相关的内容，记录一下自己学习过程， ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Hassan Wong</div><div class="author-info__description">分享各式各样的知识~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hassanblog"><i class="fab fa-github"></i><span>关注我的GitHub~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hassanblog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hassanspencer@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/u/6574421101" target="_blank" title="Sina"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://space.bilibili.com/383883097" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili"></i></a><a class="social-icon" href="https://kg.qq.com/node/personal?uid=639b9c81222c368234" target="_blank" title="全民K歌"><i class="iconfont icon-quanminkge"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎关注我的<b>微信公众号</b>，一个致力于分享学习资源、发表文章和提供智能聊天功能的公众号<img src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.png"></div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客"><img data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/my_first_blog.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"/></a><div class="content"><a class="title" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2020-11-22T13:24:00.000Z" title="发表于 2020-11-22 21:24:00">2020-11-22</time></div></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="card-content"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E6%83%B3/"><span class="card-category-list-name">随想</span><span class="card-category-list-count">1</span></a></li>
+}})()</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2204525_rdlmtzh5iyb.css"><link rel="stylesheet" href="hassan/hassan.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/css/hideCategory.min.css"><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Hassan's Blog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-time-axis"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-sort"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw iconfont icon-movie"></i><span> 电影</span></a></li><li><a class="site-page" href="/gallery/"><i class="fa-fw iconfont icon-photo"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-blogroll"></i><span> 网链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw iconfont icon-messageboard"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于我</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://gitee.com/HassanWong/image-bed/raw/master/images/%E8%B5%AB%E6%95%8F.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hassan's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 站内搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-time-axis"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-sort"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw iconfont icon-movie"></i><span> 电影</span></a></li><li><a class="site-page" href="/gallery/"><i class="fa-fw iconfont icon-photo"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-blogroll"></i><span> 网链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw iconfont icon-messageboard"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-about"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hassan's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/hassanblog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hassanspencer@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/u/6574421101" target="_blank" title="Sina"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://space.bilibili.com/383883097" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili"></i></a><a class="social-icon" href="https://kg.qq.com/node/personal?uid=639b9c81222c368234" target="_blank" title="全民K歌"><i class="iconfont icon-quanminkge"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">     <img class="post_bg" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/my_first_blog.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">我的第一篇博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-22T13:24:00.000Z" title="发表于 2020-11-22 21:24:00">2020-11-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">心中之🔥再次燃起今天是2020-11-22，我决定写我人生中真正意义上的第一篇博客。说到博客，之前一直对我来说是件很头疼的事情。记得第一次正儿八经地听说博客，是19年10月份在一个学院小讲堂上，夏学长教我们如何搭建博客、更改主题等等等等，最后确实搭建成功了，但发现非常的麻烦，毕竟自己也是小白，没太多时间鼓捣，于是放弃了。然后今年的2月份，我突然改变主意就直接用CSDN写博客，说实话使用起来确实方便，毕竟别人什么都给你做了，你只需要在上面写博客即可，当然除了我那几天上传的2个博客，之后就再也没有上传过了，人比较懒。直到近几天，我又心血来潮，就又开始花时间鼓捣，居然很快就上手了，可能学的知识多了，有些之前遇到的难题就迎刃而解了。开始我把yilia主题更改为butterfly，记得我在官网找主题就找了很久，一百来个主题反反复复看都没有喜欢的，最后还是百度了一下才找到这个”风靡全网“的主题，说实话我很喜欢，很符合自己的审美，10分我给9分。现在有空的话，我会一点美化和完善我的博客。
+我会在博客里写哪些内容？说实话，我想写任何我想写的方面。但主要还是关于计算机相关的内容，记录一下自己学习过程， ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E6%82%9F%E7%A9%BA.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Hassan Wong</div><div class="author-info__description">分享各式各样的知识~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hassanblog"><i class="fab fa-github"></i><span>关注我的GitHub~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hassanblog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hassanspencer@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/u/6574421101" target="_blank" title="Sina"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://space.bilibili.com/383883097" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili"></i></a><a class="social-icon" href="https://kg.qq.com/node/personal?uid=639b9c81222c368234" target="_blank" title="全民K歌"><i class="iconfont icon-quanminkge"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎关注我的<b>微信公众号</b>，一个致力于分享学习资源、发表文章和提供智能聊天功能的公众号<img src="https://gitee.com/HassanWong/image-bed/raw/master/images/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.png"></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客"><img data-lazy-src="https://gitee.com/HassanWong/image-bed/raw/master/images/my_first_blog.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"/></a><div class="content"><a class="title" href="/2020/11/22/My%20First%20Blog/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2020-11-22T13:24:00.000Z" title="发表于 2020-11-22 21:24:00">2020-11-22</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
             
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: rgb(55, 94, 141)">博客</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>时光机</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-11-12T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">472</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-12-11T09:01:44.774Z"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://gitee.com/HassanWong/image-bed/raw/master/images/%E8%B5%AB%E6%95%8F.png)"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Wassup! Welcome to my <a href="https://hassanblog.github.io">Blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="深浅模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">站内搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E6%83%B3/"><span class="card-category-list-name">随想</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: rgb(29, 175, 91)">博客</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>时光机</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-11-12T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">472</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-22T12:46:28.862Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://gitee.com/HassanWong/image-bed/raw/master/images/%E8%B5%AB%E6%95%8F.png')"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Wassup! Welcome to my <a href="https://hassanblog.github.io">Blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="深浅模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">站内搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -159,7 +185,7 @@ if (asideStatus !== undefined) {
 
   }
 }
-window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
   if (true) { 
     var typed = new Typed("#subtitle", {
       strings: "Never Too Late To Learn,活到老，学到老".split(","),
@@ -174,14 +200,17 @@ window.addEventListener('load',()=> {preloader.endLoading()})</script><div class
 }
 
 if (true) {
-  if (typeof Typed === 'function') subtitleType()
-  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
 } else {
   subtitleType()
 }</script><script>if (document.getElementsByClassName('mermaid').length) {
   if (window.mermaidJsLoad) mermaid.init()
   else {
-    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
       window.mermaidJsLoad = true
       mermaid.initialize({
         theme: 'default',
@@ -189,107 +218,11 @@ if (true) {
       true && mermaid.init()
     })
   }
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.17.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
-  const changeContent = (content) => {
-    if (content === '') return content
-
-    content = content.replace(/<[^>]+>/g,"") // remove html tag
-    content = content.replace(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png|webp)/g, '') // remove image link
-    content = content.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi, '') // remove url
-
-    if (content.length > 150) {
-      content = content.substring(0,150) + '...'
-    }
-    return content
-  }
-
-  const getIcon = (icon, mail) => {
-    if (icon) return icon 
-    let defaultIcon = ''
-    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
-    return iconUrl
-  }
-
-  const generateHtml = array => {
-    let result = ''
-
-    for (let i = 0; i < array.length; i++) {
-      result += '<div class=\'aside-list-item\'>'
-
-      if (true) {
-        result += `<a href='${array[i].url}' class="thumbnail"><img src='${getIcon(array[i].avatar, array[i].mail)}' alt='${array[i].nick}'></a>`
-      }
-
-      result += `<div class='content'>
-      <a class='comment' href='${array[i].url}'>${array[i].content}</a>
-      <div class='name'><span>${array[i].nick}</span><time> / ${btf.diffDate(array[i].date, true)}</time></div>
-      </div></div>`
-    }
-
-    let $dom = document.querySelector('#card-newest-comments .aside-list')
-    $dom.innerHTML= result
-    window.pjax && window.pjax.refresh($dom)
-  }
-
-  const getValineData = () => {
-      let serverURL = ''
-      if (false) {
-        serverURL = ''
-      } else {
-        serverURL = 'https://hi2pYlLK.api.lncldglobal.com'
-      }
-
-    var settings = {
-      "url": `${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,
-      "method": "GET",
-      "timeout": 0,
-      "headers": {
-        "X-LC-Id": 'hi2pYlLKY9yFwl9eGsA3qPcD-gzGzoHsz',
-        "X-LC-Key": 'Dhfbf2HAHrjh0A9Osj8HR2Up',
-        "Content-Type": "application/json"
-      },
-    }
-
-    $.ajax(settings).done((response) => {
-      var valineArray = []
-      response.results.forEach((e)=>{
-        valineArray.push({
-          'avatar': e.QQAvatar,
-          'content': changeContent(e.comment),
-          'mail': e.mail,
-          'nick': e.nick,
-          'url': e.url,
-          'date': e.createdAt,
-        })
-      })
-      
-      saveToLocal.set('leancloud-newest-comments', JSON.stringify(valineArray), 10/(60*24))
-      generateHtml(valineArray)
-
-    }).fail(()=>{
-      const $dom = document.querySelector('#card-newest-comments .aside-list')
-      $dom.innerHTML= "无法获取资料，请确认相关配置是否正确"
-    })
-  }
-
-  const newestCommentInit = () => {
-    if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('leancloud-newest-comments')
-      if (data) {
-        generateHtml(JSON.parse(data))
-      } else {
-        getValineData()
-      }
-    }
-  }
-
-  newestCommentInit()
-  document.addEventListener('pjax:complete', newestCommentInit)
-})</script><script src="js/hassan.js"></script><div class="aplayer no-destroy" data-id="5363191876" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-theme="#c5efe3" data-order="random" data-preload="none" data-autoplay="false" muted></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="120" alpha="0.5" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+}</script></div><script src="js/hassan.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideCategory.min.js"></script><div class="aplayer no-destroy" data-id="5363191876" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-theme="#c5efe3" data-order="random" data-preload="none" data-autoplay="false" muted></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="120" alpha="0.5" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
-</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
   'title',
   '#config_change',
   '#body-wrap',
@@ -313,8 +246,12 @@ var pjax = new Pjax({
 document.addEventListener('pjax:complete', function () {
   window.refreshFn()
 
-  $('script[data-pjax]').each(function () {
-    $(this).parent().append($(this).remove())
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
   })
 
   GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
@@ -353,10 +290,15 @@ document.addEventListener('pjax:send', function () {
 
   typeof typed === 'object' && typed.destroy()
 
-  $(window).off('scroll')
-
   //reset readmode
-  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
-})</script></div><script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
 </script></body></html>
