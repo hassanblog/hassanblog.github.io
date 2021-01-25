@@ -37,6 +37,12 @@
   font-size: 19px;
 }
 
+.icon-earth:before {
+  content: "\e62e";
+  /* 修改大小 */
+  font-size: 19px;
+}
+
 /*移动端优化：去除归档、标签、最新文章、公告、网站统计（:not(:last-child)）*/
 @media screen and (max-width: 800px) {
   #aside_content div {
