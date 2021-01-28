@@ -1364,7 +1364,7 @@ canvas:not(#ribbon-canvas),
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(73,177,245,0.1);
+  --blockquote-bg: rgba(159,228,209,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
 }
@@ -1477,7 +1477,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #00c4b6;
+  background: #9fe4d1;
   color: #f7f7f7;
 }
 button {
@@ -1595,7 +1595,7 @@ img:not([src]) {
   height: 16px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: var(#c8c8c8);
+  background-color: var(#a8a8a8);
   background-image: -webkit--webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
   background-image: -webkit--moz-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
   background-image: -webkit--o-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
@@ -1604,7 +1604,7 @@ img:not([src]) {
   border-radius: 2em;
 }
 *::-webkit-scrollbar-track {
-  background-color: #c8c8c8;
+  background-color: #a8a8a8;
   border-radius: 2em;
 }
 *::-webkit-scrollbar-corner {
@@ -1612,7 +1612,7 @@ img:not([src]) {
 }
 *::-moz-selection {
   color: #fff;
-  background-color: #c8c8c8;
+  background-color: #a8a8a8;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #121212;
@@ -1725,7 +1725,7 @@ figure.highlight pre .javascript .function {
 blockquote {
   margin: 0 0 1rem;
   padding: 0.1rem 0.8rem;
-  border-left: 0.2rem solid #49b1f5;
+  border-left: 0.2rem solid #9fe4d1;
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
 }
@@ -3056,8 +3056,8 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
-  border-left-color: #009d92;
-  background: #00c4b6;
+  border-left-color: #63d3b4;
+  background: #9fe4d1;
   color: #fff;
 }
 #aside-content #card-toc .toc-content:before {

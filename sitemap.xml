@@ -4,7 +4,14 @@
   <url>
     <loc>http://hassanblog.github.io/log/index.html</loc>
     
-    <lastmod>2021-01-25</lastmod>
+    <lastmod>2021-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hassanblog.github.io/manifest.json</loc>
+    
+    <lastmod>2021-01-28</lastmod>
     
   </url>
   
@@ -50,17 +57,10 @@
     
   </url>
   
-  <url>
-    <loc>http://hassanblog.github.io/manifest.json</loc>
-    
-    <lastmod>2020-11-20</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://hassanblog.github.io/</loc>
-    <lastmod>2021-01-25</lastmod>
+    <lastmod>2021-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,7 +68,7 @@
   
   <url>
     <loc>http://hassanblog.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-01-25</lastmod>
+    <lastmod>2021-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -77,7 +77,7 @@
   
   <url>
     <loc>http://hassanblog.github.io/categories/%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2021-01-25</lastmod>
+    <lastmod>2021-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

@@ -8,3 +8,111 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
+
+/* 透明度修改 */
+div#post,
+div#page,
+div#archive,
+div#tag,
+div#category {
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: black;
+}
+
+/* 字体更换（可以叠加） ------------------------- 开始*/
+@font-face {
+  font-family: "Candy"; /* 字体名自定义即可 */
+  src: url("../fonts/Candy.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
+@font-face {
+  font-family: "OldEnglish"; /* 字体名自定义即可 */
+  src: url("../fonts/OldEnglish.TTF"); /* 字体文件路径 */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Apple"; /* 字体名自定义即可 */
+  src: url("../fonts/Apple.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
+
+/* 文章总页面 */
+div#page,
+div#post {
+  font-family: "Apple", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Candy", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+/* h123456 */
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 23px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 18px;
+  color: gray;
+}
+
+/* 网站大标题 */
+h1#site-title {
+  font-family: "OldEnglish", sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/* 网站左上角名称，网站座右铭 */
+a#site-name,
+span#subtitle {
+  font-family: "Candy", sans-serif;
+  font-size: 22px;
+}
+/* 主页文章块简介，footer文字 */
+div.content,
+div.copyright,
+div.footer_custom_text {
+  font-family: "Apple", sans-serif;
+  font-size: 16px;
+}
+/* 右上方导航栏，右侧小组件，主页文章块标题 */
+div#menus,
+div.card-widget,
+a.article-title {
+  font-family: "Candy", sans-serif;
+  font-weight: 500;
+}
+span {
+  font-size: 17px;
+}
+/* 字体更换（可以叠加）------------------------- 结尾 */
+
+/* 隐藏 Aplayer 的全局吸底音乐标签 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
