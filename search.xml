@@ -32,17 +32,6 @@
     
     
     <entry>
-      <title>关于我 - About Me</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="hassan/hassan.css"/>
       <url>hassan/hassan.css</url>
@@ -54,33 +43,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="hassan/hassan.js"/>
-      <url>hassan/hassan.js</url>
+      <title>关于我 - About Me</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
       
-        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~  ' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐播放器 - Music Player</title>
-      <link href="music/index.html"/>
-      <url>music/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="音乐播放器功能简介"><a href="#音乐播放器功能简介" class="headerlink" title="音乐播放器功能简介"></a>音乐播放器功能简介</h1><hr><ol><li>点击网页左下角播放键▶即可播放歌曲</li><li>点击右箭头➡展开音乐详情</li><li>点击三杠型按钮展开歌单</li></ol><blockquote><p>其余按钮功能等你来探索</p></blockquote>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类 - Categories</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
       
     </entry>
     
@@ -109,6 +76,28 @@
     
     
     <entry>
+      <title></title>
+      <link href="hassan/hassan.js"/>
+      <url>hassan/hassan.js</url>
+      
+        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~  ' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类 - Categories</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>更新日志 - Update Log</title>
       <link href="log/index.html"/>
       <url>log/index.html</url>
@@ -125,6 +114,17 @@
       <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐播放器 - Music Player</title>
+      <link href="music/index.html"/>
+      <url>music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="音乐播放器功能简介"><a href="#音乐播放器功能简介" class="headerlink" title="音乐播放器功能简介"></a>音乐播放器功能简介</h1><hr><ol><li>点击网页左下角播放键▶即可播放歌曲</li><li>点击右箭头➡展开音乐详情</li><li>点击三杠型按钮展开歌单</li></ol><blockquote><p>其余按钮功能等你来探索</p></blockquote>]]></content>
       
     </entry>
     
