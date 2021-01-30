@@ -15,11 +15,10 @@ div#page,
 div#archive,
 div#tag,
 div#category {
-  background: rgba(255, 255, 255, 0.8) !important;
-  color: black;
+  opacity: 0.9;
 }
 
-/* 字体更换（可以叠加） ------------------------- 开始*/
+/* 字体更改（可以叠加） ------------------------------------ 开始*/
 @font-face {
   font-family: "Candy"; /* 字体名自定义即可 */
   src: url("../fonts/Candy.ttf"); /* 字体文件路径 */
@@ -30,17 +29,23 @@ div#category {
   src: url("../fonts/OldEnglish.TTF"); /* 字体文件路径 */
   font-display: swap;
 }
-@font-face {
-  font-family: "Apple"; /* 字体名自定义即可 */
-  src: url("../fonts/Apple.ttf"); /* 字体文件路径 */
-  font-display: swap;
-}
 
 /* 文章总页面 */
 div#page,
 div#post {
-  font-family: "Apple", sans-serif;
   font-size: 16px;
+}
+
+/* 时间轴 */
+div.meta p {
+  font-size: 22px;
+  font-family: "OldEnglish", sans-serif;
+}
+
+/* 加粗效果更改 */
+strong {
+  font-weight: normal;
+  background-color: #fdbba6;
 }
 
 h1,
@@ -50,7 +55,6 @@ h4,
 h5,
 h6 {
   font-family: "Candy", sans-serif;
-  color: black;
   font-weight: 400;
 }
 /* h123456 */
@@ -77,21 +81,14 @@ h6 {
 /* 网站大标题 */
 h1#site-title {
   font-family: "OldEnglish", sans-serif;
-  font-size: 50px;
+  font-size: 55px !important;
   font-weight: lighter;
 }
 
-/* 网站左上角名称，网站座右铭 */
-a#site-name,
-span#subtitle {
-  font-family: "Candy", sans-serif;
-  font-size: 22px;
-}
 /* 主页文章块简介，footer文字 */
 div.content,
 div.copyright,
 div.footer_custom_text {
-  font-family: "Apple", sans-serif;
   font-size: 16px;
 }
 /* 右上方导航栏，右侧小组件，主页文章块标题 */
@@ -101,10 +98,39 @@ a.article-title {
   font-family: "Candy", sans-serif;
   font-weight: 500;
 }
-span {
-  font-size: 17px;
+
+/* 网站右上角导航栏 - 后代选择器 */
+div a span {
+  font-size: 18px;
 }
-/* 字体更换（可以叠加）------------------------- 结尾 */
+
+/* Aplayer */
+div span {
+  font-size: 15px;
+}
+
+/* 网站左上角名称，网站座右铭 */
+a#site-name,
+span#subtitle {
+  font-family: "Candy", sans-serif;
+  font-size: 24px;
+}
+
+/* 圆角化 */
+button[title],
+a#to_comment {
+  border-radius: 100%;
+}
+
+/* 时光机日期 */
+time {
+  font-size: 15px;
+}
+.article-sort-item span {
+  font-size: 24px;
+  font-family: "OldEnglish", sans-serif;
+}
+/* 字体更改 ------------------------------------ 结尾 */
 
 /* 隐藏 Aplayer 的全局吸底音乐标签 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {

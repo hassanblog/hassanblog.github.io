@@ -32,44 +32,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="manifest.json"/>
-      <url>manifest.json</url>
-      
-        <content type="html"><![CDATA[{"name":"string","short_name":"Junzhou","theme_color":"#9fe4d1","background_color":"#9fe4d1","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"images/pwaicons/36.png","sizes":"36x36","type":"image/png"},{"src":"images/pwaicons/48.png","sizes":"48x48","type":"image/png"},{"src":"images/pwaicons/72.png","sizes":"72x72","type":"image/png"},{"src":"images/pwaicons/96.png","sizes":"96x96","type":"image/png"},{"src":"images/pwaicons/144.png","sizes":"144x144","type":"image/png"},{"src":"images/pwaicons/192.png","sizes":"192x192","type":"image/png"},{"src":"images/pwaicons/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
+      <title>关于我 - About Me</title>
       <link href="about/index.html"/>
       <url>about/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>昵称：Hassan川枫</p><p>性别：男</p><p>本科：三峡大学</p><p>爱好：唱歌，街舞，说唱，打篮球，剪辑，摄影。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="hassan/hassan.js"/>
-      <url>hassan/hassan.js</url>
-      
-        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~  ' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
       
     </entry>
     
@@ -87,18 +54,51 @@
     
     
     <entry>
-      <title>更新日志</title>
-      <link href="log/index.html"/>
-      <url>log/index.html</url>
+      <title></title>
+      <link href="hassan/hassan.js"/>
+      <url>hassan/hassan.js</url>
       
-        <content type="html"><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="2021-1-28"><a href="#2021-1-28" class="headerlink" title="2021-1-28"></a>2021-1-28</h2><ul><li>取消<a href="https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90">全球访客</a>小组件</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">更改字体为风格</a>（甜甜圈海报，OldEnglish，苹方）</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">隐藏 Aplayer 的全局吸底音乐标签</a></li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">修改网页透明度</a>（0.8）</li><li>更改字体大小（标题，文章，小组件，导航栏等等）</li><li>加深滚动条颜色</li></ul><h2 id="2021-1-25"><a href="#2021-1-25" class="headerlink" title="2021-1-25"></a>2021-1-25</h2><ul><li><a href="https://akilar.gitee.io/posts/e87ad7f8/">添加网站底层徽标</a></li><li><a href="https://akilar.gitee.io/posts/22257072/">时间轴美化 - 十二生肖</a></li><li><a href="https://akilar.gitee.io/posts/3d221bf2/">加载动画更改</a></li></ul><h2 id="2021-1-23"><a href="#2021-1-23" class="headerlink" title="2021-1-23"></a>2021-1-23</h2><ul><li>将“留言板”更改为“更新日志”</li></ul>]]></content>
+        <content type="html"><![CDATA[设置页脚博主会动的心$(document).ready(function (e) {    $('.copyright').html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');})// 卖萌标题var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function() {    if (document.hidden) {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(つェ⊂) 感觉你怪怪的~~';        clearTimeout(titleTime);    } else {        $('[rel="icon"]').attr('href', "/img/favicon.ico");        document.title = '(*´∇｀*) 怪可爱的~~  ' + OriginTitle;        titleTime = setTimeout(function() {            document.title = OriginTitle;        }, 2000);    }});]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>网链</title>
+      <title>音乐播放器 - Music Player</title>
+      <link href="music/index.html"/>
+      <url>music/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="音乐播放器功能简介"><a href="#音乐播放器功能简介" class="headerlink" title="音乐播放器功能简介"></a>音乐播放器功能简介</h1><hr><ol><li>点击网页左下角播放键▶即可播放歌曲</li><li>点击右箭头➡展开音乐详情</li><li>点击三杠型按钮展开歌单</li></ol><blockquote><p>其余按钮功能等你来探索</p></blockquote>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类 - Categories</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="manifest.json"/>
+      <url>manifest.json</url>
+      
+        <content type="html"><![CDATA[{"name":"string","short_name":"Junzhou","theme_color":"#9fe4d1","background_color":"#9fe4d1","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"images/pwaicons/36.png","sizes":"36x36","type":"image/png"},{"src":"images/pwaicons/48.png","sizes":"48x48","type":"image/png"},{"src":"images/pwaicons/72.png","sizes":"72x72","type":"image/png"},{"src":"images/pwaicons/96.png","sizes":"96x96","type":"image/png"},{"src":"images/pwaicons/144.png","sizes":"144x144","type":"image/png"},{"src":"images/pwaicons/192.png","sizes":"192x192","type":"image/png"},{"src":"images/pwaicons/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网链 - Links</title>
       <link href="link/index.html"/>
       <url>link/index.html</url>
       
@@ -109,22 +109,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title>更新日志 - Update Log</title>
+      <link href="log/index.html"/>
+      <url>log/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="timeline"><p class='p h2'>更新日志</p><div class="timenode"><div class="meta"><p><p>2021-1-30</p></p></div><div class="body"><ul><li>更改字体加粗效果（去掉bold改为<strong>橘粉色</strong>高光）</li><li>网页右侧button圆角化”音乐“板块更名为”音乐播放器“，并附上功能简介。</li><li>”电影“、”照片“板块加上”待开发“后缀。</li><li>给导航栏各个板块的页面标题加英文后缀</li><li>给”更新日志“板块<a href="https://akilar.top/posts/615e2dec/">添加时间轴timeline外挂标签</a></li><li><a href="https://akilar.top/posts/1f9c68c9/">增加网站首页置顶gitcalendar</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-28</p></p></div><div class="body"><ul><li>取消<a href="https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90">全球访客</a>小组件</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">更改字体</a>（甜甜圈海报，OldEnglish）</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">隐藏 Aplayer 的全局吸底音乐标签</a></li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">修改网页透明度</a>（0.9）</li><li>更改字体大小（标题，文章，小组件，导航栏等等）</li><li>加深滚动条颜色</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-25</p></p></div><div class="body"><ul><li><a href="https://akilar.gitee.io/posts/e87ad7f8/">添加网站底层徽标</a></li><li><a href="https://akilar.gitee.io/posts/22257072/">时间轴美化 - 十二生肖</a></li><li><a href="https://akilar.gitee.io/posts/3d221bf2/">加载动画更改</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-23</p></p></div><div class="body"><ul><li>将“留言板”更改为“更新日志”</li></ul></div></div></div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>我的歌单</title>
-      <link href="music/index.html"/>
-      <url>music/index.html</url>
+      <title>标签 - Tags</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
-        <content type="html"><![CDATA[<div class="aplayer no-destroy" data-id="5363191876" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-theme="#c5efe3" data-order="random" data-preload="none" data-autoplay="false" muted></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
