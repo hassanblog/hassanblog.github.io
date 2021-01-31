@@ -234,7 +234,7 @@ if ('Valine' === 'Valine' || !false) {
   function loadOtherComment () {
     loadValine()
   }
-}</script></div><script src="js/hassan.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideCategory.min.js"></script><div class="aplayer no-destroy" data-id="5363191876" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-theme="#c5efe3" data-order="random" data-preload="none" data-autoplay="false" muted></div><script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script><script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="120" alpha="0.5" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+}</script></div><script src="js/hassan.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideCategory.min.js"></script><div class="aplayer no-destroy" data-id="5363191876" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-theme="#c5efe3" data-order="random" data-preload="none" data-autoplay="false" muted></div><script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script><script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="120" alpha="0.5" zIndex="-1" mobile="false" data-click="false"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
@@ -319,7 +319,7 @@ document.addEventListener('pjax:error', (e) => {
 })</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script>var gitcalendar = new Vue({
   el: '#gitcalendar',
   data: {
-    simplemode: true, 
+    simplemode: false, 
     user: 'hassanblog',
     fixed: 'fixed',
     px: 'px',
@@ -353,7 +353,7 @@ document.addEventListener('pjax:error', (e) => {
     first2date: [],
     montharrbefore: [],
     monthindex: 0,
-    color: ['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']
+    color: ['#ebedf0', '#cdefec', '#a9e4de', '#81D8CF', '#65cfc5', '#4dc8bb', '#39bbae', '#319d93', '#278178', '#216962', '#1b5852']
   },
   methods: {
     selectStyle(data, event) {
@@ -381,7 +381,7 @@ document.addEventListener('pjax:error', (e) => {
     },
   }
 });
-var apiurl = 'hassanblog-github-io.vercel.app' ? 'https://hassanblog-github-io.vercel.app/api?' : 'https://githubapi.ryanchristian.dev/user/'
+var apiurl = '' ? 'https:///api?' : 'https://githubapi.ryanchristian.dev/user/'
 var githubapiurl = apiurl + gitcalendar.user;
 //canvas绘图
 function responsiveChart() {
@@ -421,10 +421,13 @@ function responsiveChart() {
     };
     ctx.font = "600  Arial";
     ctx.fillStyle = '#aaa';
-    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
-    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
-    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
-    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    ctx.fillText("7", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("1", 0, 2.9 * linemaxwitdh);
+    ctx.fillText("2", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("3", 0, 4.9 * linemaxwitdh);
+    ctx.fillText("4", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("5", 0, 6.9 * linemaxwitdh);
+    ctx.fillText("6", 0, 7.9 * linemaxwitdh);
     let monthindexlist = c.width / 24;
     for (let index in gitcalendar.monthchange) {
       ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
