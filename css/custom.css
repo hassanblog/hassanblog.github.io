@@ -29,17 +29,59 @@ div#category {
   src: url("../fonts/OldEnglish.TTF"); /* 字体文件路径 */
   font-display: swap;
 }
+@font-face {
+  font-family: "Poem"; /* 字体名自定义即可 */
+  src: url("../fonts/毛笔行书字体.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
 
 /* 文章总页面 */
 div#page,
 div#post {
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
-/* 时间轴 */
+/* 链接 */
+li a[rel="noopener"] {
+  color: #81D8CF !important;
+}
+
+/* 分类板块 */
+div.category-lists {
+  font-family: "Candy", sans-serif;
+}
+ul.category-list {
+  font-size: 20px;
+}
+
+/* 标签板块 */
+div.tag-cloud-title {
+  font-family: "Candy", sans-serif;
+}
+.tag-cloud-list>a {
+  font-family: "Candy", sans-serif;
+  font-size: 20px !important;
+}
+
+/* 更新日志 - 时间轴 */
 div.meta p {
   font-size: 22px;
   font-family: "OldEnglish", sans-serif;
+}
+
+/* 时光机板块 */
+time {
+  font-size: 16px;
+}
+.article-sort-item span {
+  font-size: 24px;
+  font-family: "OldEnglish", sans-serif;
+  font-weight: bold;
+}
+div.article-sort-title {
+  font-family: "Candy", sans-serif;
+  font-size: 28px;
 }
 
 /* 加粗效果更改 */
@@ -91,12 +133,20 @@ div.copyright,
 div.footer_custom_text {
   font-size: 16px;
 }
+
 /* 右上方导航栏，右侧小组件，主页文章块标题 */
 div#menus,
 div.card-widget,
 a.article-title {
   font-family: "Candy", sans-serif;
   font-weight: 500;
+}
+/* 博主介绍，文章标签分类，公告，网站数据 */
+div.author-info__description,
+div.headline,
+div.announcement_content,
+div.webinfo-item {
+  font-size: 15.8px !important;
 }
 
 /* 网站右上角导航栏 - 后代选择器 */
@@ -105,7 +155,7 @@ div a span {
 }
 
 /* Aplayer */
-div span {
+div li span {
   font-size: 15px;
 }
 
@@ -122,13 +172,8 @@ a#to_comment {
   border-radius: 100%;
 }
 
-/* 时光机日期 */
-time {
-  font-size: 15px;
-}
-.article-sort-item span {
-  font-size: 24px;
-  font-family: "OldEnglish", sans-serif;
+span.hide-content {
+  background-color:#b4b4b4;
 }
 /* 字体更改 ------------------------------------ 结尾 */
 
