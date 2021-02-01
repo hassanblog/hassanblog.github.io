@@ -57,22 +57,11 @@
     
     
     <entry>
-      <title>分类 - Categories</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
+      <title></title>
+      <link href="manifest.json"/>
+      <url>manifest.json</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网链 - Links</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[{"name":"string","short_name":"Junzhou","theme_color":"#81D8CF","background_color":"#81D8CF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"images/pwaicons/36.png","sizes":"36x36","type":"image/png"},{"src":"images/pwaicons/48.png","sizes":"48x48","type":"image/png"},{"src":"images/pwaicons/72.png","sizes":"72x72","type":"image/png"},{"src":"images/pwaicons/96.png","sizes":"96x96","type":"image/png"},{"src":"images/pwaicons/144.png","sizes":"144x144","type":"image/png"},{"src":"images/pwaicons/192.png","sizes":"192x192","type":"image/png"},{"src":"images/pwaicons/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
@@ -90,11 +79,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="manifest.json"/>
-      <url>manifest.json</url>
+      <title>分类 - Categories</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
       
-        <content type="html"><![CDATA[{"name":"string","short_name":"Junzhou","theme_color":"#81D8CF","background_color":"#81D8CF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"images/pwaicons/36.png","sizes":"36x36","type":"image/png"},{"src":"images/pwaicons/48.png","sizes":"48x48","type":"image/png"},{"src":"images/pwaicons/72.png","sizes":"72x72","type":"image/png"},{"src":"images/pwaicons/96.png","sizes":"96x96","type":"image/png"},{"src":"images/pwaicons/144.png","sizes":"144x144","type":"image/png"},{"src":"images/pwaicons/192.png","sizes":"192x192","type":"image/png"},{"src":"images/pwaicons/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -106,6 +95,17 @@
       <url>hassan/hassan.css</url>
       
         <content type="html"><![CDATA[/* 修改图标颜色、大小 */.fa-github:before {  content: "\f09b";}.fa-github:before {  content: "\f09b";  /* 修改颜色 */  color: #4eabe9;}.fa-envelope:before {  content: "\f0e0";  /* 修改颜色 */  color: #ecc849;}.fa-weibo:before {  content: "\f18a";  /* 修改颜色 */  color: #e32428;}.icon-bilibili:before {  content: "\e647";  /* 修改颜色 */  color: #00a5dc;  /* 修改大小 */  font-size: 19px;}.icon-quanminkge:before {  content: "\e970";  /* 修改颜色 */  color: #f05549;  /* 修改大小 */  font-size: 19px;}.icon-earth:before {  content: "\e62e";  /* 修改大小 */  font-size: 19px;}/*移动端优化：去除归档、标签、最新文章、公告、网站统计（:not(:last-child)）*/@media screen and (max-width: 800px) {  #aside_content div {    display: none;    font-size: 13px;  }}/* 鼠标图标 开始************/body {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png),    default !important;}/*a标签*/a:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),    pointer !important;}/*按钮*/button:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),    pointer !important;}/*i标签*/i:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),    pointer !important;}/*页脚a标签*/#footer-wrap a:hover {  text-decoration: none;  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),    pointer !important;}/*分页器*/#pagination .page-number:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),    pointer !important;}/*头部的导航栏*/#nav .site-page:hover {  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),    pointer !important;}/* 鼠标图标 结束**********/]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网链 - Links</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -127,18 +127,7 @@
       <link href="log/index.html"/>
       <url>log/index.html</url>
       
-        <content type="html"><![CDATA[<div class="timeline"><p class='p h2'>更新日志</p><div class="timenode"><div class="meta"><p><p>2021-2-1</p></p></div><div class="body"><ul><li>修复gitcalendar的页面切换回来不显示的bug（原因是aditional-js.pug文件要添加的代码没有放在.js-pjax下面）</li><li>更改诗词标签字体（毛笔行书字体）</li><li>调整部分地方的字体</li><li>“网站数据”小组件标题改成“网站数据”</li><li><a href="http://www.360doc.com/content/19/1018/22/11350070_867703931.shtml">调整文章字间距</a>（1px）</li><li>更改链接颜色（蒂芙尼蓝）</li><li>隐藏内容hide-content加背景颜色（#b4b4b4），以区分</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-31</p></p></div><div class="body"><ul><li>更改网站主题颜色（蒂芙尼蓝#81D8CF）</li><li>gitcalendar板块颜色阶梯利用蒂芙尼蓝由浅入深</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-30</p></p></div><div class="body"><ul><li>更改字体加粗效果（去掉bold改为<strong>橘粉色</strong>高光）</li><li>网页右侧button圆角化”音乐“板块更名为”音乐播放器“，并附上功能简介。</li><li>”电影“、”照片“板块加上”待开发“后缀。</li><li>给导航栏各个板块的页面标题加英文后缀</li><li>给”更新日志“板块<a href="https://akilar.top/posts/615e2dec/">添加时间轴timeline外挂标签</a></li><li><a href="https://akilar.top/posts/1f9c68c9/">增加网站首页置顶gitcalendar板块</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-28</p></p></div><div class="body"><ul><li>取消<a href="https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90">全球访客</a>小组件</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">更改网页字体</a>（甜甜圈海报，OldEnglish）</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">隐藏 Aplayer 的全局吸底音乐标签</a></li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">修改网页透明度</a>（0.9）</li><li>更改字体大小（标题，文章，小组件，导航栏等等）</li><li>加深滚动条背景区域颜色</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-25</p></p></div><div class="body"><ul><li><a href="https://akilar.gitee.io/posts/e87ad7f8/">添加网站底层徽标</a></li><li><a href="https://akilar.gitee.io/posts/22257072/">时间轴美化 - 十二生肖</a></li><li><a href="https://akilar.gitee.io/posts/3d221bf2/">加载动画更改</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-23</p></p></div><div class="body"><ul><li>将“留言板”更改为“更新日志”</li></ul></div></div></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签 - Tags</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="timeline"><p class='p h2'>更新日志</p><div class="timenode"><div class="meta"><p><p>2021-2-1</p></p></div><div class="body"><ul><li>修复gitcalendar的页面切换回来不显示的bug（原因是aditional-js.pug文件要添加的代码没有放在.js-pjax下面）</li><li>更改诗词标签字体（毛笔行书字体）</li><li>调整部分地方的字体</li><li>“网站数据”小组件标题改成“网站数据”</li><li><a href="http://www.360doc.com/content/19/1018/22/11350070_867703931.shtml">调整文章字间距</a>（1px）</li><li>更改链接颜色（蒂芙尼蓝）</li><li>隐藏内容hide-content加背景颜色（#b4b4b4），以区分</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">修改白天模式、夜间模式和阅读模式</a></li><li>加深滚动条背景区域颜色（#888888）</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-31</p></p></div><div class="body"><ul><li>更改网站主题颜色（蒂芙尼蓝#81D8CF）</li><li>gitcalendar板块颜色阶梯利用蒂芙尼蓝由浅入深</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-30</p></p></div><div class="body"><ul><li>更改字体加粗效果（去掉bold改为<strong>橘粉色</strong>高光）</li><li>网页右侧button圆角化”音乐“板块更名为”音乐播放器“，并附上功能简介。</li><li>”电影“、”照片“板块加上”待开发“后缀。</li><li>给导航栏各个板块的页面标题加英文后缀</li><li>给”更新日志“板块<a href="https://akilar.top/posts/615e2dec/">添加时间轴timeline外挂标签</a></li><li><a href="https://akilar.top/posts/1f9c68c9/">增加网站首页置顶gitcalendar板块</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-28</p></p></div><div class="body"><ul><li>取消<a href="https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90">全球访客</a>小组件</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">更改网页字体</a>（甜甜圈海报，OldEnglish）</li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">隐藏 Aplayer 的全局吸底音乐标签</a></li><li><a href="https://akilar.gitee.io/posts/ebf20e02/">修改文章透明度</a>（0.9）</li><li>更改字体大小（标题，文章，小组件，导航栏等等）</li><li>加深滚动条背景区域颜色（#a8a8a8）</li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-25</p></p></div><div class="body"><ul><li><a href="https://akilar.gitee.io/posts/e87ad7f8/">添加网站底层徽标</a></li><li><a href="https://akilar.gitee.io/posts/22257072/">时间轴美化 - 十二生肖</a></li><li><a href="https://akilar.gitee.io/posts/3d221bf2/">加载动画更改</a></li></ul></div></div><div class="timenode"><div class="meta"><p><p>2021-1-23</p></p></div><div class="body"><ul><li>将“留言板”更改为“更新日志”</li></ul></div></div></div>]]></content>
       
     </entry>
     
@@ -150,6 +139,17 @@
       <url>music/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="音乐播放器功能简介"><a href="#音乐播放器功能简介" class="headerlink" title="音乐播放器功能简介"></a>音乐播放器功能简介</h1><hr><ol><li>点击网页左下角播放键▶即可播放歌曲</li><li>点击右箭头➡展开音乐详情</li><li>点击三杠型按钮展开歌单</li></ol><blockquote><p>其余按钮功能等你来探索</p></blockquote>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签 - Tags</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
