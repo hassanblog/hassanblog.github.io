@@ -46,8 +46,9 @@ ul.category-list {
   font-size: 20px;
 }
 
-/* 标签板块 */
-div.tag-cloud-title {
+/* 标签板块，中上方弹框 */
+div.tag-cloud-title,
+a.flink-list-card::before {
   font-family: "Candy", sans-serif;
 }
 .tag-cloud-list>a {
@@ -126,17 +127,19 @@ a.article-title {
   font-family: "Candy", sans-serif;
   font-weight: 500;
 }
+
+/* 网站右上角导航栏 - 后代选择器 */
+div a span,
+ul li a.site-page {
+  font-size: 18px !important;
+}
+
 /* 博主介绍，文章标签分类，公告，网站数据 */
 div.author-info__description,
 div.headline,
 div.announcement_content,
 div.webinfo-item {
   font-size: 15.8px !important;
-}
-
-/* 网站右上角导航栏 - 后代选择器 */
-div a span {
-  font-size: 18px;
 }
 
 /* Aplayer */
