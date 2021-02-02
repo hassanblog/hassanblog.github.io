@@ -253,6 +253,12 @@ div#category {
   background: rgba(255, 255, 255, 0.7)!important;
 }
 
+/* 网链卡片透明度 */
+div.info {
+  background: rgba(255, 255, 255, 0.55) !important;
+  font-family: "Candy", sans-serif;
+}
+
 /* 隐藏 Aplayer 的全局吸底音乐标签 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
   left: -66px !important;
