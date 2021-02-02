@@ -21,8 +21,8 @@ svg.icon {
   font-display: swap;
 }
 @font-face {
-  font-family: "Poem"; /* 字体名自定义即可 */
-  src: url("../fonts/Poem.ttf"); /* 字体文件路径 */
+  font-family: "Poem1"; /* 字体名自定义即可 */
+  src: url("../fonts/Poem1.ttf"); /* 字体文件路径 */
   font-display: swap;
 }
 
@@ -73,12 +73,6 @@ time {
 div.article-sort-title {
   font-family: "Candy", sans-serif;
   font-size: 28px;
-}
-
-/* 加粗效果更改 */
-strong {
-  font-weight: normal;
-  background-color: #fdbba6;
 }
 
 h1,
@@ -156,10 +150,35 @@ span#subtitle {
   font-family: "Candy", sans-serif;
   font-size: 24px;
 }
+/* 左上角弹框文字 */
+a#site-name::before {
+  font-weight: normal;
+}
 
+/* 加粗效果 */
+strong {
+  font-weight: normal;
+  background-color: #fdbba6;
+}
+/* 加粗效果 - 深色模式 */
+[data-theme="dark"]
+  strong {
+    font-weight: normal;
+    background-color:#fb6b3c;
+  }
 /* 隐藏内容 */
 span.hide-content {
-  background-color:#b4b4b4;
+  background-color:#dedede;
+}
+/* 隐藏内容 - 深色模式 */
+[data-theme="dark"]
+  span.hide-content {
+    background-color: #585858;
+  }
+
+.poem>p,
+.poem>div {
+  font-family: "Poem1", sans-serif !important;
 }
 /* 字体更改 ------------------------------------ 结尾 */
 
@@ -177,7 +196,7 @@ a#to_comment {
   background: rgba(158, 204, 171, 0.5)!important;
 }
 
-/* 夜间模式下的阅读模式： */
+/* 深色模式下的阅读模式： */
 [data-theme="dark"]
   .read-mode #aside_content .card-widget{
     background: rgba(80, 80, 80)!important;
@@ -190,7 +209,7 @@ a#to_comment {
   }
 
 
-/* 夜间模式下组件、文章和主页文章背景 */
+/* 深色模式下组件、文章和主页文章背景 */
 [data-theme="dark"]
   div#post {
     background: rgba(0, 0, 0, 0.55)!important;
