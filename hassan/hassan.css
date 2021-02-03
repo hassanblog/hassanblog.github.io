@@ -53,28 +53,28 @@
 
 /* 鼠标图标 开始************/
 body {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor2.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor.png),
     default !important;
 }
 
 /*a标签*/
 
 a:hover {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_puppy.png),
     pointer !important;
 }
 
 /*按钮*/
 
 button:hover {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_puppy.png),
     pointer !important;
 }
 
 /*i标签*/
 
 i:hover {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_stitch.png),
     pointer !important;
 }
 
@@ -82,21 +82,22 @@ i:hover {
 
 #footer-wrap a:hover {
   text-decoration: none;
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_stitch.png),
     pointer !important;
 }
 
 /*分页器*/
 
 #pagination .page-number:hover {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_stitch1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_stitch.png),
     pointer !important;
 }
 
 /*头部的导航栏*/
 
 #nav .site-page:hover {
-  cursor: url(https://gitee.com/HassanWong/image-bed/raw/master/images/cursor_puppy1.png),
+  cursor: url(https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/cursor_puppy.png),
     pointer !important;
 }
 /* 鼠标图标 结束**********/
+

@@ -31,27 +31,36 @@ div#page,
 div#post {
   font-size: 16px;
   letter-spacing: 1px;
+  font-family: "PingFang SC", sans-serif;
 }
 
 /* 链接 */
 li a[rel="noopener"] {
-  color: #81D8CF !important;
+  color: #81d8cf !important;
 }
 
-/* 分类板块 */
-div.category-lists {
+/* 分类板块，代码框语言 */
+div.category-lists,
+div.code-lang {
   font-family: "Candy", sans-serif;
 }
 ul.category-list {
   font-size: 20px;
+}
+/* 代码框序号，代码框内容 */
+span.line,
+pre {
+  font-size: 16px;
+  font-family: "PingFang SC", sans-serif;
 }
 
 /* 标签板块，中上方弹框 */
 div.tag-cloud-title,
 a.flink-list-card::before {
   font-family: "Candy", sans-serif;
+  font-weight: normal;
 }
-.tag-cloud-list>a {
+.tag-cloud-list > a {
   font-family: "Candy", sans-serif;
   font-size: 20px !important;
 }
@@ -65,6 +74,7 @@ div.meta p {
 /* 时光机板块 */
 time {
   font-size: 16px;
+  font-family: "PingFang SC", sans-serif;
 }
 .article-sort-item span {
   font-size: 24px;
@@ -74,6 +84,10 @@ time {
 div.article-sort-title {
   font-family: "Candy", sans-serif;
   font-size: 28px;
+}
+a.article-sort-item-title {
+  font-family: "PingFang SC", sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -118,6 +132,7 @@ div.content,
 div.copyright,
 div.footer_custom_text {
   font-size: 16px;
+  font-family: "PingFang SC", sans-serif;
 }
 
 /* 右上方导航栏，右侧小组件，主页文章块标题 */
@@ -131,6 +146,7 @@ a.article-title {
 /* 网站右上角导航栏 - 后代选择器 */
 div a span,
 ul li a.site-page {
+  font-family: "Candy", sans-serif !important;
   font-size: 18px !important;
 }
 
@@ -145,6 +161,7 @@ div.webinfo-item {
 /* Aplayer */
 div li span {
   font-size: 15px;
+  font-family: "PingFang SC", sans-serif;
 }
 
 /* 网站左上角名称，网站座右铭 */
@@ -152,8 +169,9 @@ a#site-name,
 span#subtitle {
   font-family: "Candy", sans-serif;
   font-size: 24px;
+  font-weight: normal !important;
 }
-/* 左上角弹框文字 */
+/* 左上角标题点击后中上方弹框文字 */
 a#site-name::before {
   font-weight: normal;
 }
@@ -164,25 +182,25 @@ strong {
   background-color: #fdbba6;
 }
 /* 加粗效果 - 深色模式 */
-[data-theme="dark"]
-  strong {
-    font-weight: normal;
-    background-color:#fb6b3c;
-  }
+[data-theme="dark"] strong {
+  font-weight: normal;
+  background-color: #fb6b3c;
+}
 /* 隐藏内容 */
 span.hide-content {
-  background-color:#dedede;
+  background-color: #dedede;
 }
 /* 隐藏内容 - 深色模式 */
-[data-theme="dark"]
-  span.hide-content {
-    background-color: #585858;
-  }
+[data-theme="dark"] span.hide-content {
+  background-color: #585858;
+}
 
-.poem>p,
-.poem>div {
+/* 诗词 */
+.poem > p,
+.poem > div {
   font-family: "Poem1", sans-serif !important;
 }
+
 /* 字体更改 ------------------------------------ 结尾 */
 
 /* 圆角化 */
@@ -192,55 +210,45 @@ a#to_comment {
 }
 
 /* 阅读模式 */
-.read-mode #aside_content .card-widget{
-  background: rgba(158, 204, 171, 0.5)!important;
+.read-mode #aside_content .card-widget {
+  background: rgba(158, 204, 171, 0.5) !important;
 }
-.read-mode div#post{
-  background: rgba(158, 204, 171, 0.5)!important;
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) !important;
 }
 
 /* 深色模式下的阅读模式： */
-[data-theme="dark"]
-  .read-mode #aside_content .card-widget{
-    background: rgba(80, 80, 80)!important;
-    color: #ffffff;
-  }
-[data-theme="dark"]  
-  .read-mode div#post{
-    background: rgba(80, 80, 80)!important;
-    color: #ffffff;
-  }
-
+[data-theme="dark"] .read-mode #aside_content .card-widget {
+  background: rgba(80, 80, 80) !important;
+  color: #ffffff;
+}
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(80, 80, 80) !important;
+  color: #ffffff;
+}
 
 /* 深色模式下组件、文章和主页文章背景 */
-[data-theme="dark"]
-  div#post {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
-[data-theme="dark"]
-  div#category {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
-[data-theme="dark"]
-  #aside-content .card-widget {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
-[data-theme="dark"]
-  div.recent-post-item {
-   background: rgba(0, 0, 0, 0.55)!important;
- }
-[data-theme="dark"]
-  div#tag {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
-[data-theme="dark"]
-  div#page {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
-[data-theme="dark"]
-  div#archive {
-    background: rgba(0, 0, 0, 0.55)!important;
-  }
+[data-theme="dark"] div#post {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#category {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div.recent-post-item {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#tag {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#page {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#archive {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
 
 /* 透明度修改 */
 #aside-content .card-widget,
@@ -250,7 +258,7 @@ div#page,
 div#archive,
 div#tag,
 div#category {
-  background: rgba(255, 255, 255, 0.7)!important;
+  background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* 网链卡片透明度 */
