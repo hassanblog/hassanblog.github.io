@@ -26,7 +26,7 @@
   /* 修改颜色 */
   color: #00a5dc;
   /* 修改大小 */
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .icon-quanminkge:before {
@@ -34,13 +34,13 @@
   /* 修改颜色 */
   color: #f05549;
   /* 修改大小 */
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .icon-earth:before {
   content: "\e62e";
   /* 修改大小 */
-  font-size: 19px;
+  font-size: 20px;
 }
 
 /*移动端优化：去除归档、标签、最新文章、公告、网站统计（:not(:last-child)）*/

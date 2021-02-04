@@ -1337,7 +1337,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #d2ebfd;
@@ -1376,7 +1376,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: PingFang SC;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1743,8 +1743,8 @@ blockquote footer cite:before {
 }
 #article-container pre,
 #article-container code {
-  font-size: 14px;
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 16px;
+  font-family: PingFang SC !important;
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
@@ -1774,7 +1774,7 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption,
 #article-container figure.highlight .caption {
   padding: 0.3rem 0 0.1rem 0.7rem;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1em;
 }
 #article-container figure.highlight figcaption a,
@@ -1806,7 +1806,7 @@ blockquote footer cite:before {
   height: 2.15em;
   background: #1c1c1c;
   color: rgba(238,255,255,0.8);
-  font-size: 14px;
+  font-size: 16px;
 }
 #article-container .highlight-tools.closed + table {
   display: none;
@@ -3377,10 +3377,12 @@ blockquote footer cite:before {
 }
 #post-comment .comment-head #comment-switch {
   display: inline-block;
-  vertical-align: middle;
-}
-#post-comment .comment-head #comment-switch > span {
-  display: none;
+  float: right;
+  margin: 0.1rem auto 0;
+  padding: 0.2rem 0.8rem;
+  width: max-content;
+  border-radius: 8px;
+  background: #f6f8fa;
 }
 #post-comment .comment-head #comment-switch .first-comment {
   color: #ffc966;
@@ -8372,7 +8374,7 @@ _:future,
   background-image: none;
 }
 #waline-wrap textarea {
-  background: url("/image/comment_bg.png") 100% 100% no-repeat;
+  background: url("/hassan/comment_bg.png") 100% 100% no-repeat;
 }
 #waline-wrap textarea:focus {
   background-image: none;
@@ -9125,7 +9127,7 @@ details {
   margin: 1em 0;
   border-radius: 4px;
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
@@ -10353,11 +10355,11 @@ p.p.subtitle:first-child {
 }
 span.p.logo,
 p.p.logo {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: PingFang SC;
 }
 span.p.code,
 p.p.code {
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: PingFang SC;
 }
 span.p.left,
 p.p.left {
@@ -10376,7 +10378,7 @@ p.p.right {
 }
 span.p.small,
 p.p.small {
-  font-size: 14px;
+  font-size: 16px;
 }
 span.p.large,
 p.p.large {
@@ -11300,6 +11302,9 @@ div.timenode .meta:after {
 [data-theme='dark'] #article-container figure.highlight .highlight-tools {
   background: #1a1a1a !important;
   color: #90a4ae !important;
+}
+[data-theme='dark'] #post-comment #comment-switch {
+  background: #2c2c2c !important;
 }
 [data-theme='dark'] #post-comment #comment-switch .switch-btn {
   filter: brightness(0.8);

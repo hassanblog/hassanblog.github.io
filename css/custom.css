@@ -29,9 +29,7 @@ svg.icon {
 /* 文章总页面 */
 div#page,
 div#post {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-family: "PingFang SC", sans-serif;
+  letter-spacing: 1px; /* 字间距 */
 }
 
 /* 链接 */
@@ -46,12 +44,6 @@ div.code-lang {
 }
 ul.category-list {
   font-size: 20px;
-}
-/* 代码框序号，代码框内容 */
-span.line,
-pre {
-  font-size: 16px;
-  font-family: "PingFang SC", sans-serif;
 }
 
 /* 标签板块，中上方弹框 */
@@ -74,7 +66,6 @@ div.meta p {
 /* 时光机板块 */
 time {
   font-size: 16px;
-  font-family: "PingFang SC", sans-serif;
 }
 .article-sort-item span {
   font-size: 24px;
@@ -86,7 +77,6 @@ div.article-sort-title {
   font-size: 28px;
 }
 a.article-sort-item-title {
-  font-family: "PingFang SC", sans-serif;
   font-size: 16px;
 }
 
@@ -127,12 +117,13 @@ h1#site-title {
   font-weight: lighter;
 }
 
-/* 主页文章块简介，footer文字 */
-div.content,
-div.copyright,
-div.footer_custom_text {
+/* 主页文章块简介 */
+a.article-meta__tags,
+a.article-meta__categories,
+span.article-meta-label {
   font-size: 16px;
-  font-family: "PingFang SC", sans-serif;
+  font-family: "Candy", sans-serif;
+  font-weight: normal;
 }
 
 /* 右上方导航栏，右侧小组件，主页文章块标题 */
@@ -143,25 +134,17 @@ a.article-title {
   font-weight: 500;
 }
 
-/* 网站右上角导航栏 - 后代选择器 */
-div a span,
+/* 网站右上角导航栏 */
+div#menus div a span,
+div#menus div div a span,
 ul li a.site-page {
   font-family: "Candy", sans-serif !important;
   font-size: 18px !important;
 }
 
-/* 博主介绍，文章标签分类，公告，网站数据 */
-div.author-info__description,
-div.headline,
-div.announcement_content,
-div.webinfo-item {
-  font-size: 15.8px !important;
-}
-
 /* Aplayer */
-div li span {
+div ol li span {
   font-size: 15px;
-  font-family: "PingFang SC", sans-serif;
 }
 
 /* 网站左上角名称，网站座右铭 */
@@ -201,6 +184,11 @@ span.hide-content {
   font-family: "Poem1", sans-serif !important;
 }
 
+/* ICON */
+i.iconfont {
+  font-weight: bold !important;
+  font-size: 17px;
+}
 /* 字体更改 ------------------------------------ 结尾 */
 
 /* 圆角化 */
