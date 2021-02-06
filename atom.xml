@@ -3,11 +3,11 @@
   <title>Hassan&#39;s Blog</title>
   
   <subtitle>时不我待，只争朝夕</subtitle>
-  <link href="http://hassanblog.github.io/atom.xml" rel="self"/>
+  <link href="http://hassanwong.top/atom.xml" rel="self"/>
   
-  <link href="http://hassanblog.github.io/"/>
+  <link href="http://hassanwong.top/"/>
   <updated>2021-02-02T04:22:00.000Z</updated>
-  <id>http://hassanblog.github.io/</id>
+  <id>http://hassanwong.top/</id>
   
   <author>
     <name>Hassan Wong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2020年度总结&amp;2021新年计划</title>
-    <link href="http://hassanblog.github.io/2021/01/22/2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93&amp;2021%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/"/>
-    <id>http://hassanblog.github.io/2021/01/22/2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93&amp;2021%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/</id>
+    <link href="http://hassanwong.top/posts/abbrlink.html"/>
+    <id>http://hassanwong.top/posts/abbrlink.html</id>
     <published>2021-01-22T08:03:00.000Z</published>
     <updated>2021-02-02T04:22:00.000Z</updated>
     
@@ -35,17 +35,17 @@
     
     
     
-    <category term="🤔随想" scheme="http://hassanblog.github.io/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
+    <category term="🤔随想" scheme="http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
     
     
-    <category term="🎯计划" scheme="http://hassanblog.github.io/tags/%F0%9F%8E%AF%E8%AE%A1%E5%88%92/"/>
+    <category term="🎯计划" scheme="http://hassanwong.top/tags/%F0%9F%8E%AF%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>我的第一篇博客</title>
-    <link href="http://hassanblog.github.io/2020/11/22/My%20First%20Blog/"/>
-    <id>http://hassanblog.github.io/2020/11/22/My%20First%20Blog/</id>
+    <link href="http://hassanwong.top/posts/abbrlink.html"/>
+    <id>http://hassanwong.top/posts/abbrlink.html</id>
     <published>2020-11-22T13:24:00.000Z</published>
     <updated>2021-02-01T04:23:00.000Z</updated>
     
@@ -59,10 +59,10 @@
     
     
     
-    <category term="🤔随想" scheme="http://hassanblog.github.io/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
+    <category term="🤔随想" scheme="http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
     
     
-    <category term="📝博客" scheme="http://hassanblog.github.io/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/"/>
+    <category term="📝博客" scheme="http://hassanwong.top/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
