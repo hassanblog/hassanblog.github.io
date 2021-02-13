@@ -33,16 +33,7 @@ a#site-name::before {
   letter-spacing: 1px; /* 字间距 */
 }
 
-/* 链接 */
-li a[rel="noopener"],
-a[title="Creative Commons"],
-div#post div div span a,
-div div.body ul li a,
-div.post-copyright-cc-info a {
-  color: #81d8cf !important;
-}
-
-/* 分类板块，代码框语言 */
+/* 分类板块，代码块语言 */
 div.category-lists,
 div.code-lang {
   font-family: "Candy", sans-serif;
@@ -72,7 +63,7 @@ div.meta p {
 time {
   font-size: 16px;
 }
-.article-sort-item span {
+div.article-sort-item.year span {
   font-size: 24px;
   font-family: "OldEnglish", sans-serif;
   font-weight: bold;
@@ -173,7 +164,7 @@ strong {
 /* 加粗效果 - 深色模式 */
 [data-theme="dark"] strong {
   font-weight: normal;
-  background-color: #fb6b3c;
+  background-color:#c27072;
 }
 /* 隐藏内容 */
 span.hide-content {
@@ -298,7 +289,7 @@ nav#pagination.pagination-post {
 }
 
 /* 文章图片 */
-p a.fancybox img.entered.loaded {
+a.fancybox img.entered.loaded {
   border-radius: 10px;
   box-shadow: 0 4px 10px 1px rgba(7,17,27,0.15);
 }
@@ -323,6 +314,10 @@ a.thumbnail {
   border-radius: 10px !important;
 }
 
+/* 代码块 */
+#article-container figure.highlight {
+  border-radius: 10px;
+}
 /* 圆角化 -----------------------------------------------------结尾 */
 
 
@@ -380,7 +375,7 @@ div.recent-post-item {
 table th {
   text-align: left;
   border: 2px solid #aaa;
-  background-color: #cbefec;
+  background-color: #b3e7e2;
 }
 table tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -397,7 +392,7 @@ table td {
   }
 [data-theme="dark"]
   table tr:nth-child(even) {
-    background-color: #565656;
+    background-color: #464646;
   }
 [data-theme="dark"]
   table tr:nth-child(odd) {
@@ -420,3 +415,56 @@ header#page-header.not-index-bg::before {
 img.entered.loading {
   margin: 0 6px;
 }
+
+/* 代码框 */
+#article-container code {
+  border-radius: 5px;
+  background-color: #ddd;
+}
+[data-theme="dark"]
+  #article-container code {
+    background-color: #bbb;
+  }
+
+/* 朋友圈----------------------------------------------开始 */
+/* 统计信息 */
+div.chart {
+  margin: 0 auto;
+}
+.chart span {
+  width: 186px;
+  text-align: left;
+}
+div#info_user_poor {
+  border: 2px solid #8d8d8d;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #b3e7e2;
+}
+
+/* 朋友圈文章 */
+div.article-sort-item {
+  border: 2px solid #8d8d8d;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 0 16px 0;
+}
+div.article-sort-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+div.article-sort-item:nth-child(odd) {
+  background-color: #fff;
+}
+[data-theme="dark"]
+  div.article-sort-item:nth-child(even) {
+    background-color: #464646;
+  }
+[data-theme="dark"]
+  div.article-sort-item:nth-child(odd) {
+    background-color: #333;
+  }
+div.article-sort-item-time {
+  font-family: "Candy", sans-serif;
+  font-size: 18px;
+}
+/* 朋友圈----------------------------------------------结束 */

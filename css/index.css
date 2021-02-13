@@ -1465,7 +1465,7 @@ table {
   empty-cells: show;
 }
 table thead {
-  background: rgba(153,169,191,0.1);
+  background: rgba(129,216,207,0.1);
 }
 table th,
 table td {
@@ -1485,7 +1485,7 @@ button {
   cursor: pointer;
 }
 a {
-  color: #99a9bf;
+  color: #81d8cf;
   text-decoration: none;
   word-wrap: break-word;
   -webkit-transition: all 0.2s;
@@ -7764,7 +7764,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #99a9bf;
+  color: #81d8cf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -10662,7 +10662,7 @@ p.p.gray {
   position: relative;
   display: block;
   margin: 0 0 0 auto;
-  color: #99a9bf;
+  color: #81d8cf;
 }
 @-moz-keyframes tabshow {
   0% {
@@ -11552,7 +11552,7 @@ div.timenode .meta:after {
   display: none !important;
 }
 .read-mode #article-container a {
-  color: #99a9bf;
+  color: #81d8cf;
 }
 .read-mode #article-container pre,
 .read-mode #article-container .highlight:not(.js-file-line-container) {

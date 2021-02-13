@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hassanwong.top/friendcircle/index.html</loc>
+    <loc>http://hassanwong.top/log/index.html</loc>
     
     <lastmod>2021-02-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://hassanwong.top/log/index.html</loc>
+    <loc>http://hassanwong.top/link/index.html</loc>
     
     <lastmod>2021-02-13</lastmod>
     
@@ -18,14 +18,14 @@
   <url>
     <loc>http://hassanwong.top/about/index.html</loc>
     
-    <lastmod>2021-02-12</lastmod>
+    <lastmod>2021-02-13</lastmod>
     
   </url>
   
   <url>
-    <loc>http://hassanwong.top/link/index.html</loc>
+    <loc>http://hassanwong.top/friendcircle/index.html</loc>
     
-    <lastmod>2021-02-12</lastmod>
+    <lastmod>2021-02-13</lastmod>
     
   </url>
   
@@ -88,13 +88,6 @@
 
   
   <url>
-    <loc>http://hassanwong.top/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-02-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://hassanwong.top/tags/%F0%9F%A6%86%E9%9B%85%E6%80%9D/</loc>
     <lastmod>2021-02-13</lastmod>
     <changefreq>daily</changefreq>
@@ -103,6 +96,13 @@
   
   <url>
     <loc>http://hassanwong.top/tags/%F0%9F%94%A0%E8%8B%B1%E8%AF%AD/</loc>
+    <lastmod>2021-02-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hassanwong.top/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -118,14 +118,14 @@
 
   
   <url>
-    <loc>http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/</loc>
+    <loc>http://hassanwong.top/categories/%F0%9F%93%95%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://hassanwong.top/categories/%F0%9F%93%95%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2021-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
