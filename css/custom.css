@@ -1,1 +1,422 @@
-svg.icon{width:1em;height:1em;vertical-align:-.15em;fill:currentColor;overflow:hidden}@font-face{font-family:Candy;src:url(../fonts/Candy.ttf);font-display:swap}@font-face{font-family:OldEnglish;src:url(../fonts/OldEnglish.TTF);font-display:swap}@font-face{font-family:Poem1;src:url(../fonts/Poem1.ttf);font-display:swap}a#site-name::before,div#page,div#post{letter-spacing:1px}a[title="Creative Commons"],div div.body ul li a,div#post div div span a,div.post-copyright-cc-info a,li a[rel=noopener]{color:#81d8cf!important}div.category-lists,div.code-lang{font-family:Candy,sans-serif}ul.category-list{font-size:20px}a.flink-list-card::before,div.tag-cloud-title{font-family:Candy,sans-serif;font-weight:400}.tag-cloud-list>a{font-family:Candy,sans-serif;font-size:20px!important}div.meta p{font-size:22px;font-family:OldEnglish,sans-serif}time{font-size:16px}.article-sort-item span{font-size:24px;font-family:OldEnglish,sans-serif;font-weight:700}div.article-sort-title{font-family:Candy,sans-serif;font-size:28px}a.article-sort-item-title{font-size:16px}h1,h2,h3,h4,h5,h6{font-family:Candy,sans-serif;font-weight:400}h1{font-size:30px}h2{font-size:26px}h3{font-size:23px}h4{font-size:20px}h5{font-size:18px}h6{font-size:18px;color:gray}h1#site-title{font-family:OldEnglish,sans-serif;font-size:55px!important;font-weight:lighter}a.article-meta__categories,a.article-meta__tags,span.article-meta-label{font-size:16px;font-family:Candy,sans-serif;font-weight:400}a.article-title,div#menus,div.card-widget{font-family:Candy,sans-serif;font-weight:500}div#menus div a span,div#menus div div a span,ul li a.site-page{font-family:Candy,sans-serif!important;font-size:18px!important}div ol li span{font-size:15px}a#site-name,span#subtitle{font-family:Candy,sans-serif;font-size:24px;font-weight:400!important}a#site-name::before{font-weight:400}strong{font-weight:400;background-color:#fdbba6;border-radius:3px}[data-theme=dark] strong{font-weight:400;background-color:#fb6b3c}span.hide-content{background-color:#dedede}[data-theme=dark] span.hide-content{background-color:#585858}.poem>div,.poem>p{font-family:Poem1,sans-serif!important}i.iconfont{font-weight:700!important;font-size:17px}.read-mode #aside_content .card-widget{background:rgba(158,204,171,.5)!important}.read-mode div#post{background:rgba(158,204,171,.5)!important}[data-theme=dark] .read-mode #aside_content .card-widget{background:rgba(80,80,80)!important;color:#fff}[data-theme=dark] .read-mode div#post{background:rgba(80,80,80)!important;color:#fff}[data-theme=dark] div#post{background:rgba(0,0,0,.55)!important}[data-theme=dark] div#category{background:rgba(0,0,0,.55)!important}[data-theme=dark] #aside-content .card-widget{background:rgba(0,0,0,.55)!important}[data-theme=dark] div.recent-post-item{background:rgba(0,0,0,.55)!important}[data-theme=dark] div#tag{background:rgba(0,0,0,.55)!important}[data-theme=dark] div#page{background:rgba(0,0,0,.55)!important}[data-theme=dark] div#archive{background:rgba(0,0,0,.55)!important}#aside-content .card-widget,div#archive,div#category,div#page,div#post,div#tag,div.recent-post-item{background:rgba(255,255,255,.75)!important}div.info{background:rgba(255,255,255,.55)!important;font-family:Candy,sans-serif}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}a#to_comment,button[title]{border-radius:100%}.post-reward .reward-button:hover{box-shadow:inset 15em 0 0 0 var(--btn-hover-color)}div.reward-button{border-radius:8px}a#card-info-btn.button--animated{border-radius:8px;overflow:hidden;box-shadow:0 4px 10px 1px rgba(7,17,27,.15)}nav#pagination.pagination-post{border-radius:10px}a.fancybox img.entered.loaded{border-radius:10px;box-shadow:0 4px 10px 1px rgba(7,17,27,.15)}ul.reward-all{border-radius:10px;background-color:#cecfd1!important}button.hide-button.button--animated{border-radius:6px;overflow:hidden}a.thumbnail,div.card-widget,div.recent-post-item,div.search-dialog{border-radius:10px!important}[data-theme=dark] #post .post-copyright{background-color:rgb(7 8 10);text-shadow:#bfbeb8 1px 0 4px}[data-theme=dark] #post .post-copyright{border:2px solid #8d8d8d!important}[data-theme=dark] .post-copyright-info{color:#e0e0e4}#post .post-copyright__title{font-size:24px}div.post-copyright{background:#eff1f3;overflow:hidden;border-radius:10px;border:3px solid #cecfd1!important}div.post-copyright-a,div.post-copyright-c,div.post-copyright-u{text-align:center;margin:0 21px 0 5px}div.post-copyright::before{right:-38px!important;top:-133px!important;font-size:236px!important}div.post-copyright__note span h{font-size:20px;font-family:Poem1,sans-serif!important;margin-left:-3px;letter-spacing:22px}div.recent-post-item{height:280px!important}table th{text-align:left;border:2px solid #aaa;background-color:#cbefec}table tr:nth-child(even){background-color:#f2f2f2}table tr:nth-child(odd){background-color:#fff}table td{border:2px solid #aaa}[data-theme=dark] table th{background-color:#81d8cf}[data-theme=dark] table tr:nth-child(even){background-color:#565656}[data-theme=dark] table tr:nth-child(odd){background-color:#333}div.img-alt.is-center{margin-top:0}header#page-header.not-index-bg::before{display:block;height:100%;background-color:rgba(38,38,38,.5);content:''}
+/* 时间轴美化 - 十二生肖 */
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+  width: 1em;
+  height: 1em;
+  /* width和height定义图标的默认宽度和高度*/
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* 字体样式更改 ------------------------------------ 开始*/
+@font-face {
+  font-family: "Candy"; /* 字体名自定义即可 */
+  src: url("../fonts/Candy.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
+@font-face {
+  font-family: "OldEnglish"; /* 字体名自定义即可 */
+  src: url("../fonts/OldEnglish.TTF"); /* 字体文件路径 */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poem1"; /* 字体名自定义即可 */
+  src: url("../fonts/Poem1.ttf"); /* 字体文件路径 */
+  font-display: swap;
+}
+
+/* 文章总页面，上方弹框 */
+div#page,
+div#post,
+a#site-name::before {
+  letter-spacing: 1px; /* 字间距 */
+}
+
+/* 链接 */
+li a[rel="noopener"],
+a[title="Creative Commons"],
+div#post div div span a,
+div div.body ul li a,
+div.post-copyright-cc-info a {
+  color: #81d8cf !important;
+}
+
+/* 分类板块，代码框语言 */
+div.category-lists,
+div.code-lang {
+  font-family: "Candy", sans-serif;
+}
+ul.category-list {
+  font-size: 20px;
+}
+
+/* 标签板块，中上方弹框 */
+div.tag-cloud-title,
+a.flink-list-card::before {
+  font-family: "Candy", sans-serif;
+  font-weight: normal;
+}
+.tag-cloud-list > a {
+  font-family: "Candy", sans-serif;
+  font-size: 20px !important;
+}
+
+/* 更新日志 - 时间轴 */
+div.meta p {
+  font-size: 22px;
+  font-family: "OldEnglish", sans-serif;
+}
+
+/* 时光机板块 */
+time {
+  font-size: 16px;
+}
+.article-sort-item span {
+  font-size: 24px;
+  font-family: "OldEnglish", sans-serif;
+  font-weight: bold;
+}
+div.article-sort-title {
+  font-family: "Candy", sans-serif;
+  font-size: 28px;
+}
+a.article-sort-item-title {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Candy", sans-serif;
+  font-weight: 400;
+}
+/* h123456 */
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 23px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 18px;
+  color: gray;
+}
+
+/* 网站大标题 */
+h1#site-title {
+  font-family: "OldEnglish", sans-serif;
+  font-size: 55px !important;
+  font-weight: lighter;
+}
+
+/* 主页文章块简介 */
+a.article-meta__tags,
+a.article-meta__categories,
+span.article-meta-label {
+  font-size: 16px;
+  font-family: "Candy", sans-serif;
+  font-weight: normal;
+}
+
+/* 右上方导航栏，右侧小组件，主页文章块标题 */
+div#menus,
+div.card-widget,
+a.article-title {
+  font-family: "Candy", sans-serif;
+  font-weight: 500;
+}
+
+/* 网站右上角导航栏 */
+div#menus div a span,
+div#menus div div a span,
+ul li a.site-page {
+  font-family: "Candy", sans-serif !important;
+  font-size: 18px !important;
+}
+
+/* Aplayer */
+div ol li span {
+  font-size: 15px;
+}
+
+/* 网站左上角名称，网站座右铭 */
+a#site-name,
+span#subtitle {
+  font-family: "Candy", sans-serif;
+  font-size: 24px;
+  font-weight: normal !important;
+}
+/* 左上角标题点击后中上方弹框文字 */
+a#site-name::before {
+  font-weight: normal;
+}
+
+/* 加粗效果 */
+strong {
+  font-weight: normal;
+  background-color: #fdbba6;
+  border-radius: 3px;
+}
+/* 加粗效果 - 深色模式 */
+[data-theme="dark"] strong {
+  font-weight: normal;
+  background-color: #fb6b3c;
+}
+/* 隐藏内容 */
+span.hide-content {
+  background-color: #dedede;
+}
+/* 隐藏内容 - 深色模式 */
+[data-theme="dark"] span.hide-content {
+  background-color: #585858;
+}
+
+/* 诗词 */
+.poem > p,
+.poem > div {
+  font-family: "Poem1", sans-serif !important;
+}
+
+/* ICON大小 */
+i.iconfont {
+  font-size: 19px;
+}
+/* 字体样式更改 --------------------------------------- 结尾 */
+
+
+/* 阅读模式 */
+.read-mode #aside_content .card-widget {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+
+/* 深色模式下的阅读模式： */
+[data-theme="dark"] .read-mode #aside_content .card-widget {
+  background: rgba(80, 80, 80) !important;
+  color: #ffffff;
+}
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(80, 80, 80) !important;
+  color: #ffffff;
+}
+
+
+/* 透明度 ------------------------------------------- 开始 */
+/* 深色模式下组件、文章和主页文章背景 */
+[data-theme="dark"] div#post {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#category {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div.recent-post-item {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#tag {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#page {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+[data-theme="dark"] div#archive {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+/* 透明度修改 */
+#aside-content .card-widget,
+div.recent-post-item,
+div#post,
+div#page,
+div#archive,
+div#tag,
+div#category {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* 网链卡片 */
+div.info {
+  background: rgba(255, 255, 255, 0.55) !important;
+  font-family: "Candy", sans-serif;
+}
+/* 透明度 ------------------------------------------- 开始 */
+
+/* 隐藏 Aplayer 的全局吸底音乐标签 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+
+/* 圆角化 -----------------------------------------------------开始 */
+/* 右下角功能按钮 */
+button[title],
+a#to_comment {
+  border-radius: 100%;
+}
+
+/* 打赏按钮 */
+.post-reward .reward-button:hover {
+  box-shadow: inset 15em 0 0 0 var(--btn-hover-color);
+}
+div.reward-button {
+  border-radius: 8px;
+}
+
+/* 关注按钮 */
+a#card-info-btn.button--animated {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 1px rgba(7,17,27,0.15);
+}
+
+/* 文章推荐 */
+nav#pagination.pagination-post {
+  border-radius: 10px;
+}
+
+/* 文章图片 */
+p a.fancybox img.entered.loaded {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px rgba(7,17,27,0.15);
+}
+
+/* 打赏弹出框  */
+ul.reward-all {
+  border-radius: 10px;
+  background-color: #cecfd1 !important;
+}
+
+/* 外挂按钮 */
+button.hide-button.button--animated {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* 网站几乎所有板块 */
+div.card-widget,
+div.recent-post-item,
+div.search-dialog,
+a.thumbnail {
+  border-radius: 10px !important;
+}
+
+/* 圆角化 -----------------------------------------------------结尾 */
+
+
+/* 版权样式美化 -------------------------------------------------开始 */
+[data-theme="dark"]
+  #post .post-copyright {
+    background-color: rgb(7 8 10);
+    text-shadow: #bfbeb8 1px 0 4px;
+  }
+[data-theme="dark"]
+  #post .post-copyright {
+    border: 2px solid #8d8d8d !important;
+  }
+
+#post .post-copyright__title{
+  font-size:24px;
+}
+div.post-copyright {
+  background: #eff1f3;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #cecfd1 !important;
+  font-family: "Candy", sans-serif;
+}
+div.post-copyright-a,
+div.post-copyright-c,
+div.post-copyright-u {
+  text-align: center;
+  margin: 0 18px 0 5px;
+}
+div.post-copyright::before {
+  right: -38px !important;
+  top: -133px !important;
+  font-size: 236px !important;
+}
+div.post-copyright__note {
+  font-size: 20px;
+  font-family: "Poem1", sans-serif !important;
+  margin-left: -3px;
+  letter-spacing: 22px;
+  line-height: 30px;
+  color: #888888;
+}
+span.post-copyright-info a {
+  font-size: 18px;
+}
+/* 版权样式美化 -------------------------------------------------结尾 */
+
+/* 主页文章块高度 */
+div.recent-post-item {
+  height: 280px !important;
+}
+
+/* 表格标题居左显示 */
+table th {
+  text-align: left;
+  border: 2px solid #aaa;
+  background-color: #cbefec;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+table td {
+  border: 2px solid #aaa;
+}
+[data-theme="dark"] 
+  table th {
+    background-color: #81d8cf;
+  }
+[data-theme="dark"]
+  table tr:nth-child(even) {
+    background-color: #565656;
+  }
+[data-theme="dark"]
+  table tr:nth-child(odd) {
+    background-color: #333;
+  }
+
+/* 图片标题 */
+div.img-alt.is-center {
+  margin-top: 0px;
+}
+
+/* 板块顶部图调深 */
+header#page-header.not-index-bg::before {
+  display: block;
+  height: 100%;
+  background-color: rgba(38,38,38,0.5);
+  content: '';
+}
+
+img.entered.loading {
+  margin: 0 6px;
+}

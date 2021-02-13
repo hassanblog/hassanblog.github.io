@@ -1,1 +1,22 @@
-"use strict";$(document).ready(function(i){$(".copyright").html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong')});var titleTime,OriginTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?($('[rel="icon"]').attr("href","/img/favicon.ico"),document.title="(つェ⊂) 感觉你怪怪的~~",clearTimeout(titleTime)):($('[rel="icon"]').attr("href","/img/favicon.ico"),document.title="(*´∇｀*) 怪可爱的~~  "+OriginTitle,titleTime=setTimeout(function(){document.title=OriginTitle},2e3))});
+// 设置页脚博主会动的心
+$(document).ready(function (e) {
+    $('.copyright').html('©2019 - 2021 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Hassan Wong');
+})
+
+
+// 卖萌标题
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        $('[rel="icon"]').attr('href', "/img/favicon.ico");
+        document.title = '(つェ⊂) 感觉你怪怪的~~';
+        clearTimeout(titleTime);
+    } else {
+        $('[rel="icon"]').attr('href', "/img/favicon.ico");
+        document.title = '(*´∇｀*) 怪可爱的~~  ' + OriginTitle;
+        titleTime = setTimeout(function () {
+            document.title = OriginTitle;
+        }, 2000);
+    }
+});
