@@ -74,16 +74,11 @@ div.article-sort-title {
 }
 a.article-sort-item-title {
   font-size: 16px;
-  color: #eee;
 }
 div.article-sort-item.year {
   border: 0px;
-  background: none;
+  background: none !important;
 }
-[data-theme="dark"] 
-  div.article-sort-item.year {
-    background: none;
-  }
 
 h1,
 h2,
