@@ -60,7 +60,7 @@ div.meta p {
 }
 
 /* 时光机板块 */
-time {
+time.post-meta-date-created {
   font-size: 16px;
 }
 div.article-sort-item.year span {
@@ -74,7 +74,16 @@ div.article-sort-title {
 }
 a.article-sort-item-title {
   font-size: 16px;
+  color: #eee;
 }
+div.article-sort-item.year {
+  border: 0px;
+  background: none;
+}
+[data-theme="dark"] 
+  div.article-sort-item.year {
+    background: none;
+  }
 
 h1,
 h2,
