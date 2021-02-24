@@ -1,1 +1,142 @@
-"use strict";function _createForOfIteratorHelper(t,e){var r;if("undefined"==typeof Symbol||null==t[Symbol.iterator]){if(Array.isArray(t)||(r=_unsupportedIterableToArray(t))||e&&t&&"number"==typeof t.length){r&&(t=r);var n=0,e=function(){};return{s:e,n:function(){return n>=t.length?{done:!0}:{done:!1,value:t[n++]}},e:function(t){throw t},f:e}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var a,o=!0,i=!1;return{s:function(){r=t[Symbol.iterator]()},n:function(){var t=r.next();return o=t.done,t},e:function(t){i=!0,a=t},f:function(){try{o||null==r.return||r.return()}finally{if(i)throw a}}}}function _unsupportedIterableToArray(t,e){if(t){if("string"==typeof t)return _arrayLikeToArray(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?_arrayLikeToArray(t,e):void 0}}function _arrayLikeToArray(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}var friend_link_circle=new Vue({el:"#friend_link_circle",data:{datalist:[],datalist_slice:[],maxnumber:20,addnumber:10,display:!0,loadmore_display:!1,listlenth:0,today_post:0,last_update_time:"",user_lenth:"",error:0,unique_live_link:0,opentype:"_blank"},methods:{unique:function(t){return Array.from(new Set(t))},formatDate:function(t){try{var e=new Date(Date.parse(t.replace(/-/g,"/"))),r=60*((new Date).getTimezoneOffset()?(new Date).getTimezoneOffset():8)*1e3,n=e.getTime(),e=new Date(n-r),n=e.getSeconds().toString(),r=e.getMinutes().toString();return 1===n.length&&(n="0"+n),1===r.length&&(r="0"+r),e.getFullYear().toString()+"/"+(e.getMonth()+1).toString()+"/"+e.getDate().toString()+" "+e.getHours().toString()+":"+r+":"+n}catch(t){return""}},timezoon:function(){var t=this.datalist_slice[0][1][0][5];return this.formatDate(t)},todaypost:function(){var t=new Date,e=t.getFullYear(),r=(t.getMonth()+1).toString(),t=t.getDate().toString();return 1===r.length&&(r="0"+r),1===t.length&&(t="0"+t),e+"-"+r+"-"+t},addmaxnumber:function(){this.maxnumber=this.maxnumber+this.addnumber,this.maxnumber>=this.listlenth&&(this.loadmore_display=!1)},slice:function(t){var e,r=[],n=[],a=t;for(e in a){a[e].push(e),10!==a[e][1].lenth&&((o=a[e][1].split("-"))[1].length<2&&(o[1]="0"+o[1]),o[2].length<2&&(o[2]="0"+o[2]),a[e][1]=o.join("-"));var o=a[e][1].slice(0,7);-1!==r.indexOf(o)?(console.log(o),n[r.length-1][1].push(a[e])):(r.push(o),n.push([o,[a[e]]]))}for(var i=0,l=n;i<l.length;i++){var u=l[i];u.push(u[1][0][6])}return console.log(n),n}},mounted:function(){var c=this;fetch(requests_url).then(function(t){return t.json()}).then(function(t){for(var e=c.todaypost(),r=new Date(e),n=0;n<t[1].length;n++)r<new Date(t[1][n][1])&&(t[1].splice(n--,1),console.log("穿越了"));c.datalist=t[1],c.listlenth=t[1].length,c.user_lenth=t[0].length,c.datalist_slice=c.slice(t[1]),c.last_update_time=c.timezoon(),c.loadmore_display=!0;var a=[],o=_createForOfIteratorHelper(t[1]);try{for(o.s();!(i=o.n()).done;){var i=i.value;i[1]===e&&(c.today_post+=1),a.push(i[3])}}catch(t){o.e(t)}finally{o.f()}var l=c.unique(a);c.unique_live_link=l.length;var u,s=_createForOfIteratorHelper(t[0]);try{for(s.s();!(u=s.n()).done;)"true"===u.value[3]&&(c.error+=1)}catch(t){s.e(t)}finally{s.f()}})}});
+var friend_link_circle = new Vue({
+    el: '#friend_link_circle',
+    data: {
+        datalist: [],
+        datalist_slice:[],
+        maxnumber:20,
+        addnumber:10,
+        display:true,
+        loadmore_display:false,
+        listlenth:0,
+        today_post:0,
+        last_update_time:'',
+        user_lenth:'',
+        error:0,
+        unique_live_link:0,
+        opentype:'_blank'  //'_blank'打开新标签,'_self'本窗口打开
+    },
+    methods:{
+        unique (arr) {
+            return Array.from(new Set(arr))
+        },
+        formatDate(strDate) {
+            try{
+                let date = new Date(Date.parse(strDate.replace(/-/g, "/")));
+                let gettimeoffset = 0
+                if (new Date().getTimezoneOffset()){
+                    gettimeoffset = new Date().getTimezoneOffset();
+                }
+                else{
+                    gettimeoffset = 8;
+                }
+                let timeoffset = gettimeoffset * 60 * 1000;
+                let len = date.getTime();
+                let date2 = new Date(len - timeoffset);
+                let sec = date2.getSeconds().toString();
+                let min =  date2.getMinutes().toString();
+                if (sec.length === 1) {
+                    sec = "0" + sec;
+                }
+                if (min.length === 1) {
+                    min = "0" + min;
+                }
+                return date2.getFullYear().toString() + "/" + (date2.getMonth() + 1).toString() + "/" + date2.getDate().toString() + " " + date2.getHours().toString() + ":" + min + ":" + sec
+            }catch(e){return ""}
+        },
+        timezoon(){
+            let time = this.datalist_slice[0][1][0][5];
+            return this.formatDate(time)
+        },
+        todaypost(){
+            let date= new Date();
+            let year = date.getFullYear();
+            let month =(date.getMonth() + 1).toString();
+            let day = (date.getDate()).toString();
+            if (month.length === 1) {
+                month = "0" + month;
+            }
+            if (day.length === 1) {
+                day = "0" + day;
+            }
+            return  year + "-" + month + "-" + day
+        },
+        addmaxnumber(){
+            this.maxnumber = this.maxnumber + this.addnumber;
+            if (this.maxnumber >= this.listlenth){
+                this.loadmore_display=false;
+            }
+        },
+        slice(data){
+            let monthlist=[];
+            let datalist=[];
+            let data_slice = data;
+            for (let item in data_slice) {
+                data_slice[item].push(item);
+                if (data_slice[item][1].lenth !== 10) {
+                    let list = data_slice[item][1].split('-')
+                        if (list[1].length < 2){
+                            list[1]="0" + list[1]
+                        }
+                        if (list[2].length < 2){
+                            list[2]="0" + list[2]
+                        }
+                    data_slice[item][1] = list.join('-')
+                    }
+                let month=data_slice[item][1].slice(0,7);
+                if(monthlist.indexOf(month) !== -1){
+                    console.log(month);
+                    datalist[monthlist.length-1][1].push(data_slice[item]);
+                }
+                else{
+                    monthlist.push(month);
+                    datalist.push([month,[data_slice[item]]]);
+                }
+            }
+
+            for (let mounthgroup  of datalist){
+                mounthgroup.push(mounthgroup[1][0][6]);
+            }
+            console.log(datalist);
+            return datalist
+        }
+    },
+    mounted: function () {
+
+        fetch(requests_url).then(
+            data => data.json()
+    ).then(
+            data => {
+                let today = this.todaypost();
+                let Datetody = new Date(today);
+                for (let item = 0; item <data[1].length ;item++){
+                    let Datedate = new Date(data[1][item][1])
+                    if (Datedate>Datetody){
+                        data[1].splice(item --, 1);
+                        console.log('穿越了');
+                    }
+                }
+                this.datalist = data[1];
+                this.listlenth = data[1].length;
+                this.user_lenth = data[0].length;
+                this.datalist_slice = this.slice(data[1]);
+                this.last_update_time =this.timezoon();
+                this.loadmore_display = true;
+                let link_list=[];
+                for (let item of data[1]){
+                    if (item[1] === today ){
+                        this.today_post +=1;
+                    }
+                    link_list.push(item[3]);
+                }
+                let arr = this.unique(link_list);
+                this.unique_live_link = arr.length;
+                for (let item of data[0]){
+                    if (item[3] === 'true' ){
+                        this.error +=1;
+                    }
+                }
+            }
+        )
+
+    }
+})
