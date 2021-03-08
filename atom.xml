@@ -3,11 +3,11 @@
   <title>Hassan&#39;s Blog</title>
   
   <subtitle>时不我待，只争朝夕</subtitle>
-  <link href="http://hassanwong.top/atom.xml" rel="self"/>
+  <link href="https://hassanwong.top/atom.xml" rel="self"/>
   
-  <link href="http://hassanwong.top/"/>
+  <link href="https://hassanwong.top/"/>
   <updated>2021-02-21T09:06:00.000Z</updated>
-  <id>http://hassanwong.top/</id>
+  <id>https://hassanwong.top/</id>
   
   <author>
     <name>Hassan Wong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>搭建框架为Hexo主题为WebStack的网址导航教程</title>
-    <link href="http://hassanwong.top/posts/61c6c2e8/"/>
-    <id>http://hassanwong.top/posts/61c6c2e8/</id>
+    <link href="https://hassanwong.top/posts/61c6c2e8/"/>
+    <id>https://hassanwong.top/posts/61c6c2e8/</id>
     <published>2021-02-15T11:22:00.000Z</published>
     <updated>2021-02-21T09:06:00.000Z</updated>
     
@@ -30,40 +30,40 @@
     
     
     
-    <category term="💻教程" scheme="http://hassanwong.top/categories/%F0%9F%92%BB%E6%95%99%E7%A8%8B/"/>
+    <category term="💻教程" scheme="https://hassanwong.top/categories/%F0%9F%92%BB%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="🔹Hexo" scheme="http://hassanwong.top/tags/%F0%9F%94%B9Hexo/"/>
+    <category term="🔹Hexo" scheme="https://hassanwong.top/tags/%F0%9F%94%B9Hexo/"/>
     
   </entry>
   
   <entry>
     <title>雅思技巧笔记</title>
-    <link href="http://hassanwong.top/posts/3ce75aa2/"/>
-    <id>http://hassanwong.top/posts/3ce75aa2/</id>
+    <link href="https://hassanwong.top/posts/3ce75aa2/"/>
+    <id>https://hassanwong.top/posts/3ce75aa2/</id>
     <published>2021-02-09T15:06:00.000Z</published>
     <updated>2021-02-10T11:02:00.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p><strong>目标</strong>：</p><table><thead><tr><th>听</th><th>说</th><th>读</th><th>写</th></tr></thead><tbody><tr><td>7.5</td><td>6.5</td><td>7.0</td><td>6.5</td></tr></tbody></table></blockquote><h2 id="听力"><a href="#听力" class="headerlink" title="听力"></a>听力</h2><p><strong>写答案原则：</strong></p><ol><li><p>和原文发音一致，听到什么写什么</p></li><li><p>听重读，一般重读为答案</p></li></ol><p><strong>某些题型答案的写法需注意（推荐写法）：</strong></p><p>3:00-5:00</p><p>10-minute walk</p><p>10-litre water</p><p><strong>精听步骤：</strong></p><ol><li><p>听一遍录音，对答案</p></li><li><p>看错题对应原文答案句</p></li><li><p>错题找到定位和答案出处</p></li><li><p>跟读错题答案句</p></li></ol><p><strong>精听跟读：</strong></p><ol><li><p>先做题再精听</p></li><li><p>只精听错题答案处</p></li><li><p>听不出练跟读</p></li></ol><p><strong>精听跟读目的：</strong></p><ol><li><p>纠正发音</p></li><li><p>理解出题定位</p></li><li><p>理解改写难点</p></li><li><p>不犯相同错误</p></li></ol><p><strong>通用原则：</strong></p><ol><li><p>rather than后的都不选/写</p></li><li><p>表示<strong>结论性</strong>的词或<strong>转折词</strong>后面是答案（So, However…）</p></li></ol><p><strong>需要大写的词：</strong></p><p>地址，人名，月份，星期，国家</p><p><strong>题型：</strong></p><p><strong>1. 主观题</strong></p><ul><li>信息表格题</li><li>填空题</li><li>提纲题</li><li>简答题</li><li>短文填空</li><li>地图题</li><li>流程图题</li></ul><p><strong>2. 客观题</strong></p><ul><li>单选</li><li>多选</li><li>搭配题1</li><li>搭配题2</li></ul><p><strong>填空题（主观）规律：</strong></p><ol><li><p>根据空格前后的词，来预测答案的词性和内容</p></li><li><p>注意原文和题干的同义替换</p></li></ol><p><strong>选择题（客观）规律：</strong></p><ol><li><p>不选反常规的选项</p></li><li><p>速记答案用缩写形式（有时间可以全写）</p></li><li><p>正确的选项通常是对题干的同义替换</p></li></ol><p><strong>雅思A类听力评分标准对照表：</strong></p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/IELTS-ScoringTable.png" alt="雅思A类听力评分标准对照表" style="zoom:120%" /><h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p><strong>定位词：</strong></p><p>概念：具有实际意义的词，不抽象</p><p>拒绝猜测和推理，讲究实证，一 一对应</p><p>数字和大写字母周围出现考点的概率最大</p><p><strong>判断题</strong>：</p><p>尽量不要简写答案，三种答案数量有规律</p><p>True≥ False &gt; Not Given</p><table><thead><tr><th>总题数</th><th>T、F、N分布</th></tr></thead><tbody><tr><td>3</td><td>1，1，1</td></tr><tr><td>4</td><td>2（T，F），1，1</td></tr><tr><td>5</td><td>2，2，1</td></tr><tr><td>6</td><td>3（T，F），2，1  2，2，2</td></tr></tbody></table><p>做题的同时找两个题目的答案</p><p>不要在判断题当中单独使用数字定位</p><p><strong>雅思A类阅读评分标准对照表（同听力）：</strong></p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/IELTS-ScoringTable.png" alt="雅思A类阅读评分标准对照表" style="zoom:120%" /><h2 id="口语"><a href="#口语" class="headerlink" title="口语"></a>口语</h2><p><strong>Part2主题：</strong></p><ul><li>旅游</li><li>人物性格</li><li>课外活动</li><li>餐厅美食</li><li>高科技产品</li><li>衣服类</li></ul><p><strong>Part3答题框架：</strong></p><ol><li><p>what观点</p></li><li><p>why原因</p></li><li><p>details细节</p></li></ol><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>完善中。。。。。。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p><strong>目标</strong>：</p><table><thead><tr><th>听</th><th>说</th><th>读</th><th>写</th></tr></thead><tbody><tr><td>7.5</td><td>6.5</td><td>7.0</td><td>6.5</td></tr></tbody></table></blockquote><h2 id="听力"><a href="#听力" class="headerlink" title="听力"></a>听力</h2><p><strong>写答案原则：</strong></p><ol><li><p>答案和录音说的一致，所听即所得</p></li><li><p>听重读，一般重读为答案</p></li></ol><p><strong>某些题型答案的写法需注意（推荐写法）：</strong></p><p>3:00-5:00</p><p>10-minute walk</p><p>10-litre water</p><p><strong>精听步骤：</strong></p><ol><li><p>听一遍录音，对答案</p></li><li><p>看错题对应原文答案句</p></li><li><p>错题找到定位和答案出处</p></li><li><p>跟读错题答案句</p></li></ol><p><strong>精听跟读：</strong></p><ol><li><p>先做题再精听</p></li><li><p>只精听错题答案处</p></li><li><p>听不出练跟读</p></li></ol><p><strong>精听跟读目的：</strong></p><ol><li><p>纠正发音</p></li><li><p>理解出题定位</p></li><li><p>理解改写难点</p></li><li><p>不犯相同错误</p></li></ol><p><strong>通用原则：</strong></p><ol><li><p>rather than后的都不选/写</p></li><li><p>表示<strong>结论性</strong>的词或<strong>转折词</strong>后面是答案（So, However…）</p></li></ol><p><strong>需要大写的词：</strong></p><p>地址，人名，月份，星期，国家</p><p><strong>题型：</strong></p><p><strong>1. 主观题</strong></p><ul><li>信息表格题</li><li>填空题</li><li>提纲题</li><li>简答题</li><li>短文填空</li><li>地图题</li><li>流程图题</li></ul><p><strong>2. 客观题</strong></p><ul><li>单选</li><li>多选</li><li>搭配题1</li><li>搭配题2</li></ul><p><strong>填空题（主观）规律：</strong></p><ol><li><p>根据空格前后的词，来预测答案的词性和内容</p></li><li><p>注意原文和题干的同义替换</p></li></ol><p><strong>选择题（客观）规律：</strong></p><ol><li><p>不选反常识的选项</p></li><li><p>速记答案用缩写形式（有时间可以全写）</p></li><li><p>正确的选项通常是对题干的同义替换</p></li></ol><p><strong>雅思A类听力评分标准对照表：</strong></p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/IELTS-ScoringTable.png" alt="雅思A类听力评分标准对照表" style="zoom:120%" /><h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p><strong>定位词：</strong></p><p>概念：具有实际意义的词，不抽象</p><p>拒绝猜测和推理，讲究实证，一 一对应</p><p>数字和大写字母周围出现考点的概率最大</p><p><strong>判断题</strong>：</p><p>尽量不要简写答案，三种答案数量有规律</p><p>True≥ False &gt; Not Given</p><table><thead><tr><th>总题数</th><th>T、F、N分布</th></tr></thead><tbody><tr><td>3</td><td>1，1，1</td></tr><tr><td>4</td><td>2（T，F），1，1</td></tr><tr><td>5</td><td>2，2，1</td></tr><tr><td>6</td><td>3（T，F），2，1  2，2，2</td></tr></tbody></table><p>做题的同时找两个题目的答案</p><p>不要在判断题当中单独使用数字定位</p><p><strong>雅思A类阅读评分标准对照表（同听力）：</strong></p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/hassanblog/CDN/img/IELTS-ScoringTable.png" alt="雅思A类阅读评分标准对照表" style="zoom:120%" /><h2 id="口语"><a href="#口语" class="headerlink" title="口语"></a>口语</h2><p><strong>Part2主题：</strong></p><ul><li>旅游</li><li>人物性格</li><li>课外活动</li><li>餐厅美食</li><li>高科技产品</li><li>衣服类</li></ul><p><strong>Part3答题框架：</strong></p><ol><li><p>what观点</p></li><li><p>why原因</p></li><li><p>details细节</p></li></ol><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>完善中。。。。。。</p>]]></content>
     
     
     <summary type="html">适合烤鸭小白的技巧笔记</summary>
     
     
     
-    <category term="📕笔记" scheme="http://hassanwong.top/categories/%F0%9F%93%95%E7%AC%94%E8%AE%B0/"/>
+    <category term="📕笔记" scheme="https://hassanwong.top/categories/%F0%9F%93%95%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="🦆雅思" scheme="http://hassanwong.top/tags/%F0%9F%A6%86%E9%9B%85%E6%80%9D/"/>
+    <category term="🦆雅思" scheme="https://hassanwong.top/tags/%F0%9F%A6%86%E9%9B%85%E6%80%9D/"/>
     
-    <category term="🔠英语" scheme="http://hassanwong.top/tags/%F0%9F%94%A0%E8%8B%B1%E8%AF%AD/"/>
+    <category term="🔠英语" scheme="https://hassanwong.top/tags/%F0%9F%94%A0%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>2020年度总结&amp;2021新年计划</title>
-    <link href="http://hassanwong.top/posts/d5180487/"/>
-    <id>http://hassanwong.top/posts/d5180487/</id>
+    <link href="https://hassanwong.top/posts/d5180487/"/>
+    <id>https://hassanwong.top/posts/d5180487/</id>
     <published>2021-01-22T08:03:00.000Z</published>
     <updated>2021-02-02T04:22:00.000Z</updated>
     
@@ -79,17 +79,17 @@
     
     
     
-    <category term="🤔随想" scheme="http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
+    <category term="🤔随想" scheme="https://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
     
     
-    <category term="🎯计划" scheme="http://hassanwong.top/tags/%F0%9F%8E%AF%E8%AE%A1%E5%88%92/"/>
+    <category term="🎯计划" scheme="https://hassanwong.top/tags/%F0%9F%8E%AF%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>我的第一篇博客</title>
-    <link href="http://hassanwong.top/posts/d95d7e09/"/>
-    <id>http://hassanwong.top/posts/d95d7e09/</id>
+    <link href="https://hassanwong.top/posts/d95d7e09/"/>
+    <id>https://hassanwong.top/posts/d95d7e09/</id>
     <published>2020-11-22T13:24:00.000Z</published>
     <updated>2021-02-09T08:48:00.000Z</updated>
     
@@ -103,10 +103,10 @@
     
     
     
-    <category term="🤔随想" scheme="http://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
+    <category term="🤔随想" scheme="https://hassanwong.top/categories/%F0%9F%A4%94%E9%9A%8F%E6%83%B3/"/>
     
     
-    <category term="📝博客" scheme="http://hassanwong.top/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/"/>
+    <category term="📝博客" scheme="https://hassanwong.top/tags/%F0%9F%93%9D%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
